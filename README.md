@@ -1,5 +1,9 @@
 # Hyper JavaScript Snippets (Visual Studio Code)
 
+[![Version](https://img.shields.io/vscode-marketplace/v/t7yang.hyper-javascript-snippets.svg)](https://marketplace.visualstudio.com/items?itemName=t7yang.hyper-javascript-snippets)
+[![Downloads](https://img.shields.io/vscode-marketplace/d/t7yang.hyper-javascript-snippets.svg)](https://marketplace.visualstudio.com/items?itemName=t7yang.hyper-javascript-snippets)
+[![Rating](https://img.shields.io/vscode-marketplace/r/t7yang.hyper-javascript-snippets.svg)](https://marketplace.visualstudio.com/items?itemName=t7yang.hyper-javascript-snippets)
+
 ## Introduction
 This Visual Studio Code snippet extension is for JavaScript and TypeScript. Snippets mostly extended from [JavaScript Snippets](https://github.com/nathanchapman/vscode-javascript-snippets) but masively modified to make it more user friendly.
 
@@ -15,21 +19,21 @@ Snippets are design in several different user friendly aspects with other snippe
 Below explain the reason why these snippets have difference design perspective.
 
 #### Rule 1: Cursor to the end
-Most of the snippets are moving cursor to the end of snippet.
+Snippets make cursor going to the end for let you determine should or should not add a semicolon and easy to going next.
 
 #### Rule 2: Mostly no semicolon
-Most of the snippets without the end of semicolon, except those snippets who confirm end with semicolon without syntax error. Not because of "Standard JS Style" (actually it is not standard). Another benefit of remove the semicolon is it work nice with point-free-style.
+Snippets end without a semicolon, except those snippets who surely end up with a semicolon. Not because of "Standard JS Style" (actually it is not standard), instead to make you more contorllable to the flow, as well as more friendly to point-free-style (Still some exceptions, see known issues).
 
-You can determine when to add semicolon, because of "Rule 1", or if you using formater like [Prettier](https://prettier.io/), you will never bother with semicolon issue.
+You still can very easy to determine whether or not to add a semicolon because "Rule 1". Or if you using formater like [Prettier](https://prettier.io/), semicolon would never a issue anymore.
 
-#### Rule 3: Mostly no newline
-Most of the snippets add the newline only if it is necessary, you determine code should write in one line or multiple line. Besides, add a newline is just about a click.
+#### Rule 3: No newline
+Only if newline is necessary, snippets most with newline. You who determine code should write in one line or multiple line. Besides, add a newline is just about a click.
 
 #### Rule 4: Placeholder only if needed
-Not appropriate placeholder may make you do more work to delete it, even break intellisense. The placeholder only add if it does not break anything or intellisense break without it.
+Not appropriate placeholder may mess up everything, even intellisense. Placeholder is added only if it does not break anything or intellisense break without it.
 
 #### Known issues
-* Most of the snippets about `import`, `require`, and `export` without `''` at the path place. This because of most of path intellisense extensions do not work properly if there is a existed `''`.
+* Snippets about module like `import`, `require`, and `export` are without `''` at the path place. This because intellisense extensions may not work properly if there is a existing `''`.
 
 ### Declarations
 #### `va ⇥` var assignment
