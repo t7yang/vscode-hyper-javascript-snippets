@@ -1,0 +1,46 @@
+{
+  "name": "hyper-javascript-snippets",
+  "description":
+    "A collection of snippets that cover JavaScript ecosystem for VS Code",
+  "version": "1.0.0",
+  "displayName": "Hyper JavaScript Snippets",
+  "publisher": "t7yang",
+  "icon": "images/hyper-js.png",
+  "galleryBanner": {
+    "color": "#F0DB4F",
+    "theme": "dark"
+  },
+  "engines": {
+    "vscode": "^0.10.0"
+  },
+  "categories": ["Snippets"],
+  "contributes": {
+    "snippets": [
+      {
+        "language": "javascript",
+        "path": "./snippets/hyper-js.json"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/hyper-js.json"
+      },
+      {
+        "language": "javascriptreact",
+        "path": "./snippets/hyper-js.json"
+      },
+      {
+        "language": "typescriptreact",
+        "path": "./snippets/hyper-js.json"
+      }
+    ]
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/t7yang/vscode-hyper-javascript-snippets"
+  },
+  "bugs": {
+    "url": "https://github.com/t7yang/vscode-hyper-javascript-snippets/issues"
+  },
+  "homepage": "https://github.com/t7yang/vscode-hyper-javascript-snippets"
+}

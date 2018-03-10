@@ -1,0 +1,486 @@
+{
+  "var assignment": {
+    "prefix": "va",
+    "body": "var ${2} = ${1};${0}",
+    "description": "var assignment"
+  },
+  "let assignment": {
+    "prefix": "la",
+    "body": "let ${2} = ${1};${0}",
+    "description": "let assignment"
+  },
+  "const assignment": {
+    "prefix": "ca",
+    "body": "const ${2} = ${1};${0}",
+    "description": "const assignment"
+  },
+
+  "if statement": {
+    "prefix": "if",
+    "body": "if (${1}) {${0}}",
+    "description": "if statement"
+  },
+  "else statement": {
+    "prefix": "else",
+    "body": "else {${0}}",
+    "description": "else statement"
+  },
+  "if/else statement": {
+    "prefix": "ifelse",
+    "body": "if (${1}) {${2}} else {${0}}",
+    "description": "if/else statement"
+  },
+  "else if statement": {
+    "prefix": "elseif",
+    "body": "else if (${1}) {${0}}",
+    "description": "else if statement"
+  },
+  "ternary operator": {
+    "prefix": "ternary",
+    "body": "${1} ? ${2} : ${3}",
+    "description": "ternary operator"
+  },
+  "switch case": {
+    "prefix": "switch",
+    "body": "switch (${1}) {\n\tcase ${2}:\n\t\t$0\n\t\tbreak;\n\tdefault:\n\t\tbreak;\n}",
+    "description": "switch case"
+  },
+  "case": {
+    "prefix": "case",
+    "body": "case ${1}:\n\t${2}\n\t${0:break};",
+    "description": "switch's case"
+  },
+
+  "for loop": {
+    "prefix": "for",
+    "body": "for (${1}; ${2}; ${3}) {\n\t${0}\n}",
+    "description": "for loop"
+  },
+  "for loop array": {
+    "prefix": "forarr",
+    "body": "for (let ${1} = 0, ${2} = ${3}.length; ${1} < ${2}; ${1}++) {\n\t${0}\n}",
+    "description": "for loop array"
+  },
+  "reverse for loop array": {
+    "prefix": "rforarr",
+    "body": "for (let ${1} = ${2}.length - 1; ${1} >= 0; ${1}--) {\n\t${0}\n}",
+    "description": "reverse for loop array"
+  },
+  "for in loop": {
+    "prefix": "forin",
+    "body": "for (const ${1} in ${2}) {\n\tif (${2}.hasOwnProperty(${1})) {\n\t\t${0}\n\t}\n}",
+    "description": "for in loop"
+  },
+  "for of loop (ES2015)": {
+    "prefix": "forof",
+    "body": "for (const ${1} of ${2}) {\n\t${0}\n}",
+    "description": "for of loop (ES2015)"
+  },
+  "while loop": {
+    "prefix": "while",
+    "body": "while (${1}) {${0}}",
+    "description": "while loop"
+  },
+  "try/catch": {
+    "prefix": "trycatch",
+    "body": "try {${0}} catch (error) (${1}) {${2}}",
+    "description": "try/catch"
+  },
+  "try/finally": {
+    "prefix": "tf",
+    "body": "try {${0}} finally {${1}}",
+    "description": "try/finally"
+  },
+  "try/catch/finally": {
+    "prefix": "tcf",
+    "body": "try {${0}} catch (${1}) {${2}} finally {${3}}",
+    "description": "try/catch/finally"
+  },
+
+  "anonymous function": {
+    "prefix": "f",
+    "body": "function (${1}) {${2}}${0}",
+    "description": "anonymous function"
+  },
+  "named function": {
+    "prefix": "fn",
+    "body": "function ${1}(${2}) {${3}}${0}",
+    "description": "named function"
+  },
+  "arrow function (ES2015)": {
+    "prefix": "af",
+    "body": "(${1}) => ${2}",
+    "description": "arrow function (ES2015)"
+  },
+  "async anonymous function": {
+    "prefix": "fa",
+    "body": "async function (${1}) {${2}}${0}",
+    "description": "async anonymous function"
+  },
+  "async named function": {
+    "prefix": "fna",
+    "body": "async function ${1}(${2}) {${3}}${0}",
+    "description": "async named function"
+  },
+  "async arrow function (ES2015)": {
+    "prefix": "afa",
+    "body": "async (${1}) => ${2}",
+    "description": "async arrow function (ES2015)"
+  },
+  "immediately-invoked function expression (IIFE)": {
+    "prefix": "iife",
+    "body": "(${2})(${1})${0}",
+    "description": "immediately-invoked function expression (IIFE)"
+  },
+  "function apply": {
+    "prefix": "fapply",
+    "body": "${1}.apply(${2:this})${0}",
+    "description": "function apply"
+  },
+  "function call": {
+    "prefix": "fcall",
+    "body": "${1}.call(${2:this})${0}",
+    "description": "function call"
+  },
+  "function bind": {
+    "prefix": "fbind",
+    "body": "${1}.bind(${2:this})${0}",
+    "description": "function bind"
+  },
+  "generator function (ES2015)": {
+    "prefix": "gf",
+    "body": "function* (${1}) {${0}}",
+    "description": "generator function (ES2015)"
+  },
+  "async generator function (ES2018)": {
+    "prefix": "gfa",
+    "body": "async function* (${1}) {${0}}",
+    "description": "async generator function (ES2018)"
+  },
+  "named generator function (ES2015)": {
+    "prefix": "gfn",
+    "body": "function* ${1}(${2}) {${0}}",
+    "description": "named generator function (ES2015)"
+  },
+  "async named generator function (ES2018)": {
+    "prefix": "gfna",
+    "body": "async function* ${1}(${2}) {${0}}",
+    "description": "async named generator function (ES2018)"
+  },
+
+  "sequence of 0..n": {
+    "prefix": "seq",
+    "body": "[...Array(${1:length}).keys()]${0}",
+    "description": "sequence of 0..n"
+  },
+
+  "object literal": {
+    "prefix": "ol",
+    "body": "{\n\tkv${0}\n}${0}",
+    "description": "object literal"
+  },
+  "same-line object literal": {
+    "prefix": "slol",
+    "body": "{ kv${0} }${0}",
+    "description": "same-line object literal"
+  },
+  "key/value pair": {
+    "prefix": "kv",
+    "body": "${1}: ${2},",
+    "description": "key/value pair"
+  },
+  "Object.assign": {
+    "prefix": "oa",
+    "body": "Object.assign(${1:dest}, ${2:source})",
+    "description": "Object.assign"
+  },
+  "Object.assign copy (shallow clone)": {
+    "prefix": "oc",
+    "body": "Object.assign({}, ${1:original}, ${2:source})",
+    "description": "Object.assign copy (shallow clone)"
+  },
+
+  "class (ES2015)": {
+    "prefix": "c",
+    "body": "class ${1} {\n\t${0}\n}",
+    "description": "class (ES2015)"
+  },
+  "class extends (ES2015)": {
+    "prefix": "cex",
+    "body": "class ${1} extends ${2:base} {\n\t${0}\n}",
+    "description": "class extends (ES2015)"
+  },
+  "class constructor (ES2015)": {
+    "prefix": "ctor",
+    "body": "constructor(${1}) {${0}}",
+    "description": "class constructor (ES2015)"
+  },
+  "method (ES2015)": {
+    "prefix": "cm",
+    "body": "${1:name}(${2}) {${0}}",
+    "description": "method (ES2015)"
+  },
+  "async method (ES2015)": {
+    "prefix": "acm",
+    "body": "async ${1:name}(${2}) {${0}}",
+    "description": "async method (ES2015)"
+  },
+  "getter (ES2015)": {
+    "prefix": "gter",
+    "body": "get ${1:property}() {${0}}",
+    "description": "getter (ES2015)"
+  },
+  "setter (ES2015)": {
+    "prefix": "ster",
+    "body": "set ${1:property}(${2:value}) {${0}}",
+    "description": "setter (ES2015)"
+  },
+  "getter and setter (ES2015)": {
+    "prefix": "gs",
+    "body": "get ${1:property}() {\n\t${0}\n}\n\nset ${1:property}(${2:value}) {\n\t\n}",
+    "description": "getter and setter (ES2015)"
+  },
+  "prototypal constructor": {
+    "prefix": "pctor",
+    "body": "var ${1:Class} = function(${2}) {\n\t${0}\n};",
+    "description": "prototypal constructor"
+  },
+  "prototype method": {
+    "prefix": "proto",
+    "body": "${1:Class}.prototype.${2:method} = function(${3}) {\n\t${0}\n};",
+    "description": "prototype method"
+  },
+
+  "typeof": {
+    "prefix": "tof",
+    "body": "typeof ${1:source} === '${2:undefined}'",
+    "description": "typeof"
+  },
+  "instanceof": {
+    "prefix": "iof",
+    "body": "${1:source} instanceof ${2:Object}",
+    "description": "instanceof"
+  },
+
+  "Promise (ES2015)": {
+    "prefix": "p",
+    "body": "new Promise(${0})",
+    "description": "Promise (ES2015)"
+  },
+  "Promise.th": {
+    "prefix": "th",
+    "body": "${1:promise}.then(${2})${0}",
+    "description": "Promise.then"
+  },
+  "Promise.catch": {
+    "prefix": "cat",
+    "body": "${1:promise}.catch(${2})${0}",
+    "description": "Promise.catch"
+  },
+  "Promise.finally": {
+    "prefix": "fin",
+    "body": "${1:promise}.finally(${2})${0}",
+    "description": "Promise.finally"
+  },
+
+  "export (ES2015)": {
+    "prefix": "exp",
+    "body": "export ${1}${0}",
+    "description": "export (ES2015)"
+  },
+  "export default (ES2015)": {
+    "prefix": "expd",
+    "body": "export default ${1}${0}",
+    "description": "export default (ES2015)"
+  },
+  "export as (ES2015)": {
+    "prefix": "expas",
+    "body": "export ${1} as ${2};${0}",
+    "description": "export as (ES2015)"
+  },
+  "export from (ES2015)": {
+    "prefix": "expf",
+    "body": "export ${2:name} from ${1}${0}",
+    "description": "export from (ES2015)"
+  },
+  "import (ES2015)": {
+    "prefix": "import",
+    "body": "import ${1}${0}",
+    "description": "import module (ES2015)"
+  },
+  "import module (ES2015)": {
+    "prefix": "imp",
+    "body": "import ${2:name} from ${1}${0}",
+    "description": "import module (ES2015)"
+  },
+  "import module as (ES2015)": {
+    "prefix": "impas",
+    "body": "import ${2} as ${3} from ${1}${0}",
+    "description": "import module as (ES2015)"
+  },
+  "import module all as (ES2015)": {
+    "prefix": "impall",
+    "body": "import * as ${2} from ${1}${0}",
+    "description": "import module all as (ES2015)"
+  },
+
+  "Node.js style callback": {
+    "prefix": "cb",
+    "body": "(err, ${1:response}) => {${0}}",
+    "description": "Node.js style callback"
+  },
+  "require": {
+    "prefix": "require",
+    "body": "require(${1:path})${0}",
+    "description": "require"
+  },
+  "require assignment": {
+    "prefix": "req",
+    "body": "const ${2:name} = require(${1});${0}",
+    "description": "require assignment"
+  },
+  "exports.member": {
+    "prefix": "em",
+    "body": "exports.${1} = ${2};${0}",
+    "description": "exports.member"
+  },
+  "module.exports": {
+    "prefix": "me",
+    "body": "module.exports = ${1}${0}",
+    "description": "module.exports"
+  },
+  "event handler": {
+    "prefix": "on",
+    "body": "on('${1:event}', ${2:callback});${0}",
+    "description": "event handler"
+  },
+
+  "describe": {
+    "prefix": "desc",
+    "body": "describe('${1:description}', ${2:callback});${0}",
+    "description": "describe"
+  },
+  "context": {
+    "prefix": "cont",
+    "body": "context('${1:description}', ${2:callback});${0}",
+    "description": "context"
+  },
+  "it": {
+    "prefix": "it",
+    "body": "it('${1:description}', ${2:callback});${0}",
+    "description": "it"
+  },
+  "it synchronous": {
+    "prefix": "its",
+    "body": "it('${1:description}', ${2:callback});${0}",
+    "description": "it synchronous"
+  },
+  "it asynchronous": {
+    "prefix": "ita",
+    "body": "it('${1:description}', (done) => {\n\t${2}\n\tdone();\n});${0}",
+    "description": "it asynchronous"
+  },
+  "before test suite": {
+    "prefix": "bf",
+    "body": "before(${1:callback});${0}",
+    "description": "before test suite"
+  },
+  "before each test": {
+    "prefix": "bfe",
+    "body": "beforeEach(${1:callback});${0}",
+    "description": "before each test"
+  },
+  "after test suite": {
+    "prefix": "aft",
+    "body": "after(${1:callback});${0}",
+    "description": "after test suite"
+  },
+  "after each test": {
+    "prefix": "afe",
+    "body": "afterEach(${1:callback});${0}",
+    "description": "after each test"
+  },
+
+  "console.log": {
+    "prefix": "cl",
+    "body": "console.log(${1})${0}",
+    "description": "console.log"
+  },
+  "console.error": {
+    "prefix": "ce",
+    "body": "console.error(${1})${0}",
+    "description": "console.error"
+  },
+  "console.warn": {
+    "prefix": "cw",
+    "body": "console.warn(${1})${0}",
+    "description": "console.warn"
+  },
+  "console.log labeled": {
+    "prefix": "cll",
+    "body": "console.log('${1}', ${1})${0}",
+    "description": "console.log labeled"
+  },
+  "console.error labeled": {
+    "prefix": "cel",
+    "body": "console.error('${1}', ${1})${0}",
+    "description": "console.error labeled"
+  },
+  "console.warn labeled": {
+    "prefix": "cwl",
+    "body": "console.warn('${1}', ${1})${0}",
+    "description": "console.warn labeled"
+  },
+
+  "setTimeout": {
+    "prefix": "sett",
+    "body": "setTimeout(${2:callback}, ${1:delay})${0}",
+    "description": "setTimeout"
+  },
+  "setInterval": {
+    "prefix": "setin",
+    "body": "setInterval(${2:callback}, ${1:delay})${0}",
+    "description": "setInterval"
+  },
+  "setImmediate": {
+    "prefix": "setim",
+    "body": "setImmediate(${1:callback}${2})${0}",
+    "description": "setImmediate (use only in node)"
+  },
+  "process nextTick": {
+    "prefix": "nextick",
+    "body": "process.nextTick(${1});${0}",
+    "description": "process nextTick (use only in node)"
+  },
+
+  "insert 'use strict' statement": {
+    "prefix": "us",
+    "body": "'use strict';",
+    "description": "insert 'use strict' statement"
+  },
+
+  "interface (TypeScript)": {
+    "prefix": "interface",
+    "scope": "typescript",
+    "body": "interface ${1:name} {${2}}${0}",
+    "description": "interface (TypeScript)"
+  },
+  "enum (TypeScript)": {
+    "prefix": "enum",
+    "scope": "typescript",
+    "body": "enum ${1:name} {${2}}${0}",
+    "description": "enum (TypeScript)"
+  },
+  "module (TypeScript)": {
+    "prefix": "module",
+    "scope": "typescript",
+    "body": "module ${1:name} {${2}}${0}",
+    "description": "module (TypeScript)"
+  },
+  "namespace (TypeScript)": {
+    "prefix": "namespace",
+    "scope": "typescript",
+    "body": "namespace ${1:name} {${2}}${0}",
+    "description": "namespace (TypeScript)"
+  }
+}
