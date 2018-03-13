@@ -38,17 +38,17 @@ Not appropriate placeholder may mess up everything, even intellisense. Placehold
 ### Declarations
 #### `va ⇥` var assignment
 ```javascript
-var ${1} = ${2};${0}
+var ${2:name} = ${1};${0}
 ```
 
 #### `la ⇥` let assignment
 ```javascript
-let ${1} = ${2};${0}
+let ${2:name} = ${1};${0}
 ```
 
 #### `ca ⇥` const assignment
 ```javascript
-const ${1} = ${2};${0}
+const ${2:name} = ${1};${0}
 ```
 
 ### Conditional

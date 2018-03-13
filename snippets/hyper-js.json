@@ -1,17 +1,17 @@
 {
   "var assignment": {
     "prefix": "va",
-    "body": "var ${2} = ${1};${0}",
+    "body": "var ${2:name} = ${1};${0}",
     "description": "var assignment"
   },
   "let assignment": {
     "prefix": "la",
-    "body": "let ${2} = ${1};${0}",
+    "body": "let ${2:name} = ${1};${0}",
     "description": "let assignment"
   },
   "const assignment": {
     "prefix": "ca",
-    "body": "const ${2} = ${1};${0}",
+    "body": "const ${2:name} = ${1};${0}",
     "description": "const assignment"
   },
 
