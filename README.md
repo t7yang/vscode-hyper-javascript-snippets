@@ -359,12 +359,12 @@ ${1:promise}.finally(${2})${0}
 ### ES2015 Modules
 #### `exp ⇥` export (ES2015)
 ```javascript
-export ${1}${0}
+export ${0}
 ```
 
 #### `expd ⇥` export default (ES2015)
 ```javascript
-export default ${1}${0}
+export default ${0}
 ```
 
 #### `expas ⇥` export as (ES2015)
@@ -389,7 +389,7 @@ import ${2:name} from ${1}${0}
 
 #### `impas ⇥` import module as (ES2015)
 ```javascript
-import ${2} as ${3} from ${1}${0}
+import ${2:name} as ${3} from ${1}${0}
 ```
 
 #### `impall ⇥` import module all as (ES2015)

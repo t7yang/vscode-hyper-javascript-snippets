@@ -1,6 +1,6 @@
 # Hyper JavaScript Snippets Changelog
 
-# 1.0.2
+## 1.0.2
 
 * FIXED
   * Unintended going end of snippets
