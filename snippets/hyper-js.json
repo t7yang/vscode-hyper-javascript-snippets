@@ -285,12 +285,12 @@
 
   "export (ES2015)": {
     "prefix": "exp",
-    "body": "export ${1}${0}",
+    "body": "export ${0}",
     "description": "export (ES2015)"
   },
   "export default (ES2015)": {
     "prefix": "expd",
-    "body": "export default ${1}${0}",
+    "body": "export default ${0}",
     "description": "export default (ES2015)"
   },
   "export as (ES2015)": {
@@ -315,7 +315,7 @@
   },
   "import module as (ES2015)": {
     "prefix": "impas",
-    "body": "import ${2} as ${3} from ${1}${0}",
+    "body": "import ${2:name} as ${3} from ${1}${0}",
     "description": "import module as (ES2015)"
   },
   "import module all as (ES2015)": {
