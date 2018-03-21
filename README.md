@@ -8,12 +8,12 @@
 This Visual Studio Code snippet extension is for JavaScript and TypeScript. Snippets mostly extended from [JavaScript Snippets](https://github.com/nathanchapman/vscode-javascript-snippets) but masively modified to make it more user friendly.
 
 ## Install and Setting
-Install from VSCode Extension Marketplace [Hyper JavaScript Snippets]().
+Install from VSCode Extension Marketplace [Hyper JavaScript Snippets](https://marketplace.visualstudio.com/items?itemName=t7yang.hyper-javascript-snippets).
 
 Set `"editor.snippetSuggestions": "top"` to make VSCode show snippets on top of the suggestions.
 
 ## Snippets
-Snippets are design in several different user friendly aspects with other snippet extensions, you may notice that most of the snippets without semicolon and placeholder for instructment.
+Snippets are design in several different user friendly aspects compare to other snippet extensions, most of the snippets in this extension without a end semicolon and instructment placeholder.
 
 ### The Reason Why
 Below explain the reason why these snippets have difference design perspective.
@@ -22,18 +22,18 @@ Below explain the reason why these snippets have difference design perspective.
 Snippets make cursor going to the end for let you determine should or should not add a semicolon and easy to going next.
 
 #### Rule 2: Mostly no semicolon
-Snippets end without a semicolon, except those snippets who surely end up with a semicolon. Not because of "Standard JS Style" (actually it is not standard), instead to make you more contorllable to the flow, as well as more friendly to point-free-style (Still some exceptions, see known issues).
+Snippets end without a semicolon, except those snippets who surely end up with a semicolon. Not because of "Standard JS Style" (actually it is not standard), instead, it make you more controlable to the flow, as well as more friendly to point-free-style.
 
-You still can very easy to determine whether or not to add a semicolon because "Rule 1". Or if you using formater like [Prettier](https://prettier.io/), semicolon would never a issue anymore.
+You still can easily determine whether or not to add a end semicolon because of the  "Rule 1". Or, if you using formatter like [Prettier](https://prettier.io/), semicolon would never a issue anymore.
 
 #### Rule 3: No newline
-Only if newline is necessary, snippets most with newline. You who determine code should write in one line or multiple line. Besides, add a newline is just about a click.
+Only if newline is necessary, snippets alway added newline at less at possible. You who determine code should write in one line or multiple line. Besides, add a newline is just about a click.
 
 #### Rule 4: Placeholder only if needed
 Not appropriate placeholder may mess up everything, even intellisense. Placeholder is added only if it does not break anything or intellisense break without it.
 
 #### Known issues
-* Snippets about module like `import`, `require`, and `export` are without `''` at the path place. This because intellisense extensions may not work properly if there is a existing `''`.
+* Snippets related to module like `import`, `require`, and `export` are without `''` at the path place. This because intellisense extensions may not work properly if there is a existing `''`.
 
 ### Declarations
 #### `va ⇥` var assignment

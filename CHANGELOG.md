@@ -1,20 +1,25 @@
 # Hyper JavaScript Snippets Changelog
 
+## 1.0.4
+
+* MODIFIED
+  * Modified README.
+
 ## 1.0.3
 
 * MODIFIED
-  * add placeholder for variable assignment to avoid syntax error
+  * Add placeholder to variable assignment for avoid syntax error.
 
 ## 1.0.2
 
 * FIXED
-  * unintended going end of snippets
+  * Unintended going end of snippets.
 
 ## 1.0.1
 
-* update README
-* add CHANGELOG
+* Update README.
+* Add CHANGELOG.
 
 ## 1.0.0
 
-* first release
+* First release.
