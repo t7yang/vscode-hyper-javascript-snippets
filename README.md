@@ -5,7 +5,7 @@
 [![Rating](https://img.shields.io/vscode-marketplace/r/t7yang.hyper-javascript-snippets.svg)](https://marketplace.visualstudio.com/items?itemName=t7yang.hyper-javascript-snippets)
 
 ## Introduction
-This Visual Studio Code snippet extension is for JavaScript and TypeScript. Snippets mostly extended from [JavaScript Snippets](https://github.com/nathanchapman/vscode-javascript-snippets) but masively modified to make it more user friendly.
+Hyper JavaScript Snippets is a snippets collection for JavaScript and TypeScript. The snippets follow some rules to make it more friendly to intellisense, point-free-style programming etc. Prettier is highly recommanded to work with this extension.
 
 ## Install and Setting
 Install from VSCode Extension Marketplace [Hyper JavaScript Snippets](https://marketplace.visualstudio.com/items?itemName=t7yang.hyper-javascript-snippets).
@@ -38,17 +38,31 @@ Not appropriate placeholder may mess up everything, even intellisense. Placehold
 ### Declarations
 #### `va ⇥` var assignment
 ```javascript
-var ${2:name} = ${1};${0}
+var ${1} = ${0}
 ```
 
 #### `la ⇥` let assignment
 ```javascript
-let ${2:name} = ${1};${0}
+let ${1} = ${0}
 ```
 
 #### `ca ⇥` const assignment
 ```javascript
-const ${2:name} = ${1};${0}
+const ${1} = ${0}
+```
+#### `vda ⇥` var destructuring assignment
+```javascript
+var ${1} = ${0}
+```
+
+#### `lda ⇥` let destructuring assignment
+```javascript
+let ${2:name} = ${1}${0}
+```
+
+#### `cda ⇥` const destructuring assignment
+```javascript
+const ${2:name} = ${1}${0}
 ```
 
 ### Conditional
@@ -62,12 +76,12 @@ if (${1}) {${0}}
 else {${0}}
 ```
 
-#### `ifelse ⇥` if/else statement
+#### `ifel ⇥` if/else statement
 ```javascript
 if (${1}) {${2}} else {${0}}
 ```
 
-#### `elseif ⇥` else if statement
+#### `elif ⇥` else if statement
 ```javascript
 else if (${1}) {${0}}
 ```
@@ -80,9 +94,8 @@ ${1} ? ${2} : ${3}
 #### `switch ⇥` switch case
 ```javascript
 switch (${1}) {
-	case ${2}:
+	case ${2} :
 		$0
-		break;
 	default:
 		break;
 }
@@ -90,15 +103,14 @@ switch (${1}) {
 
 #### `case ⇥` switch's case
 ```javascript
-case ${1}:
-	${2}
-	${0:break};
+case ${1} :
+	${0}
 ```
 
 ### Iteration
 #### `for ⇥` for loop
 ```javascript
-for (${1}; ${2}; ${3}) {
+for (${1} ; ${2} ; ${3}) {
 	${0}
 }
 ```
@@ -379,7 +391,7 @@ export ${2:name} from ${1}${0}
 
 #### `import ⇥` import (ES2015)
 ```javascript
-import ${1}${0}
+import ${1}
 ```
 
 #### `imp ⇥` import module (ES2015)
@@ -536,7 +548,7 @@ process.nextTick(${1});${0}
 ```
 
 ### TypeScript
-#### `interface ⇥` interface (TypeScript)
+#### `int ⇥` interface (TypeScript)
 ```javascript
 interface ${1:name} {${2}}${0}
 ```
@@ -546,12 +558,12 @@ interface ${1:name} {${2}}${0}
 enum ${1:name} {${2}}${0}
 ```
 
-#### `module ⇥` module (TypeScript)
+#### `mod ⇥` module (TypeScript)
 ```javascript
 module ${1:name} {${2}}${0}
 ```
 
-#### `namespace ⇥` namespace (TypeScript)
+#### `nam ⇥` namespace (TypeScript)
 ```javascript
 namespace ${1:name} {${2}}${0}
 ```

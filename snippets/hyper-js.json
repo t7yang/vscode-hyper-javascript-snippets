@@ -1,18 +1,33 @@
 {
   "var assignment": {
     "prefix": "va",
-    "body": "var ${2:name} = ${1};${0}",
+    "body": "var ${1} = ${0}",
     "description": "var assignment"
   },
   "let assignment": {
     "prefix": "la",
-    "body": "let ${2:name} = ${1};${0}",
+    "body": "let ${1} = ${0}",
     "description": "let assignment"
   },
   "const assignment": {
     "prefix": "ca",
-    "body": "const ${2:name} = ${1};${0}",
+    "body": "const ${1} = ${0}",
     "description": "const assignment"
+  },
+  "var destructuring assignment": {
+    "prefix": "vda",
+    "body": "var {${2}} = ${1}${0}",
+    "description": "var destructuring assignment"
+  },
+  "let destructuring assignment": {
+    "prefix": "lda",
+    "body": "let {${2}} = ${1}${0}",
+    "description": "let destructuring assignment"
+  },
+  "const destructuring assignment": {
+    "prefix": "cda",
+    "body": "const {${2}} = ${1}${0}",
+    "description": "const destructuring assignment"
   },
 
   "if statement": {
@@ -26,12 +41,12 @@
     "description": "else statement"
   },
   "if/else statement": {
-    "prefix": "ifelse",
+    "prefix": "ifel",
     "body": "if (${1}) {${2}} else {${0}}",
     "description": "if/else statement"
   },
   "else if statement": {
-    "prefix": "elseif",
+    "prefix": "elif",
     "body": "else if (${1}) {${0}}",
     "description": "else if statement"
   },
@@ -42,18 +57,18 @@
   },
   "switch case": {
     "prefix": "switch",
-    "body": "switch (${1}) {\n\tcase ${2}:\n\t\t$0\n\t\tbreak;\n\tdefault:\n\t\tbreak;\n}",
+    "body": "switch (${1}) {\n\tcase ${2} :\n\t\t$0\n\tdefault:\n\t\tbreak;\n}",
     "description": "switch case"
   },
   "case": {
     "prefix": "case",
-    "body": "case ${1}:\n\t${2}\n\t${0:break};",
+    "body": "case ${1} :\n\t${0}",
     "description": "switch's case"
   },
 
   "for loop": {
     "prefix": "for",
-    "body": "for (${1}; ${2}; ${3}) {\n\t${0}\n}",
+    "body": "for (${1} ; ${2} ; ${3}) {\n\t${0}\n}",
     "description": "for loop"
   },
   "for loop array": {
@@ -305,7 +320,7 @@
   },
   "import (ES2015)": {
     "prefix": "import",
-    "body": "import ${1}${0}",
+    "body": "import ${1}",
     "description": "import module (ES2015)"
   },
   "import module (ES2015)": {
@@ -460,7 +475,7 @@
   },
 
   "interface (TypeScript)": {
-    "prefix": "interface",
+    "prefix": "int",
     "scope": "typescript",
     "body": "interface ${1:name} {${2}}${0}",
     "description": "interface (TypeScript)"
@@ -472,13 +487,13 @@
     "description": "enum (TypeScript)"
   },
   "module (TypeScript)": {
-    "prefix": "module",
+    "prefix": "mod",
     "scope": "typescript",
     "body": "module ${1:name} {${2}}${0}",
     "description": "module (TypeScript)"
   },
   "namespace (TypeScript)": {
-    "prefix": "namespace",
+    "prefix": "nam",
     "scope": "typescript",
     "body": "namespace ${1:name} {${2}}${0}",
     "description": "namespace (TypeScript)"
