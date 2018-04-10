@@ -1,10 +1,16 @@
 # Hyper JavaScript Snippets Changelog
 
+## 1.1.1
+
+* MODIFIED
+  * Remove space between `function ()` in `f`.
+  * Update README.
+
 ## 1.1.0
 
 * ADD
   * 3 new destructuring assigment for `var`, `let`, and `const`.
-* MODEFIED
+* MODIFIED
   * `var`, `let`, and `const` remove the and semicolon and adjust the cursor point.
   * Make `if else` and `else if` prefix shorter to `ifel` and `elif`.
   * Remove the `break` in the first `switch` case and `case` to let user determine `return` or `break` to use, but keeping the `default` `break` to ensure even if user forgot to handle it.

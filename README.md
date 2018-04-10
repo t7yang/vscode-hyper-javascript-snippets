@@ -27,10 +27,10 @@ Snippets end without a semicolon, except those snippets who surely end up with a
 You still can easily determine whether or not to add a end semicolon because of the  "Rule 1". Or, if you using formatter like [Prettier](https://prettier.io/), semicolon would never a issue anymore.
 
 #### Rule 3: No newline
-Only if newline is necessary, snippets alway added newline at less at possible. You who determine code should write in one line or multiple line. Besides, add a newline is just about a click.
+Newline is added Only if it is necessary (like `switch case`). You who determine code should write in one line or multiple line. Besides, add a newline is just about a click.
 
 #### Rule 4: Placeholder only if needed
-Not appropriate placeholder may mess up everything, even intellisense. Placeholder is added only if it does not break anything or intellisense break without it.
+Inappropriate placeholder may mess up everything, even intellisense. Placeholder is added only if it does not break anything or intellisense break without it.
 
 #### Known issues
 * Snippets related to module like `import`, `require`, and `export` are without `''` at the path place. This because intellisense extensions may not work properly if there is a existing `''`.
@@ -169,7 +169,7 @@ try {${0}} catch (${1}) {${2}} finally {${3}}
 ### Functions
 #### `f ⇥` anonymous function
 ```javascript
-function (${1}) {${2}}${0}
+function(${1}) {${2}}${0}
 ```
 
 #### `fn ⇥` named function

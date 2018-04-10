@@ -114,7 +114,7 @@
 
   "anonymous function": {
     "prefix": "f",
-    "body": "function (${1}) {${2}}${0}",
+    "body": "function(${1}) {${2}}${0}",
     "description": "anonymous function"
   },
   "named function": {

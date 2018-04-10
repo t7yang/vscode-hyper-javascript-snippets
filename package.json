@@ -2,7 +2,7 @@
   "name": "hyper-javascript-snippets",
   "description":
     "A collection of snippets that cover JavaScript ecosystem for VS Code",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "displayName": "Hyper JavaScript Snippets",
   "publisher": "t7yang",
   "icon": "images/hyper-js.png",
@@ -14,7 +14,7 @@
     "vscode": "^0.10.0"
   },
   "categories": ["Snippets"],
-  "keywords": ["snippet", "snippets", "javascript", "typescript"],
+  "keywords": ["snippet", "snippets", "javascript", "typescript", "point-free"],
   "contributes": {
     "snippets": [
       {
