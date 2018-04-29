@@ -1,5 +1,15 @@
 # Hyper JavaScript Snippets Changelog
 
+# 1.2.0
+
+* MODIFIED
+  * Remove newline in `gs`, `pctor`, and `proto`.
+  * Use more percise term in `tof` and `iof` description.
+  * Change label for only in Node.JS from "use only in node" to "Node.JS".
+  * Change view for snippets in README from list to table.
+* DEPRECATED
+  * Replace `ol` to `slol` and remove `slol`.
+
 ## 1.1.1
 
 * MODIFIED
@@ -11,7 +21,7 @@
 * ADD
   * 3 new destructuring assigment for `var`, `let`, and `const`.
 * MODIFIED
-  * `var`, `let`, and `const` remove the and semicolon and adjust the cursor point.
+  * `var`, `let`, and `const` remove the end semicolon and adjust the cursor point.
   * Make `if else` and `else if` prefix shorter to `ifel` and `elif`.
   * Remove the `break` in the first `switch` case and `case` to let user determine `return` or `break` to use, but keeping the `default` `break` to ensure even if user forgot to handle it.
   * Adding a space between `${1}` and `:` in `switch`, `case`, and `${1}` and `;` in `for` to make sure it does not break auto close single/double quote and parentheses.

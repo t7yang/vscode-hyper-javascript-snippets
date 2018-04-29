@@ -191,13 +191,8 @@
 
   "object literal": {
     "prefix": "ol",
-    "body": "{\n\tkv${0}\n}${0}",
+    "body": "{ ${1}: ${2}, }${0}",
     "description": "object literal"
-  },
-  "same-line object literal": {
-    "prefix": "slol",
-    "body": "{ kv${0} }${0}",
-    "description": "same-line object literal"
   },
   "key/value pair": {
     "prefix": "kv",
@@ -252,28 +247,28 @@
   },
   "getter and setter (ES2015)": {
     "prefix": "gs",
-    "body": "get ${1:property}() {\n\t${0}\n}\n\nset ${1:property}(${2:value}) {\n\t\n}",
+    "body": "get ${1:property}() {${0}}\n\nset ${1:property}(${2:value}) {}",
     "description": "getter and setter (ES2015)"
   },
   "prototypal constructor": {
     "prefix": "pctor",
-    "body": "var ${1:Class} = function(${2}) {\n\t${0}\n};",
+    "body": "var ${1:Class} = function(${2}) {${0}};",
     "description": "prototypal constructor"
   },
   "prototype method": {
     "prefix": "proto",
-    "body": "${1:Class}.prototype.${2:method} = function(${3}) {\n\t${0}\n};",
+    "body": "${1:Class}.prototype.${2:method} = function(${3}) {${0}};",
     "description": "prototype method"
   },
 
   "typeof": {
     "prefix": "tof",
-    "body": "typeof ${1:source} === '${2:undefined}'",
+    "body": "typeof ${1:source} === '${2:type}'",
     "description": "typeof"
   },
   "instanceof": {
     "prefix": "iof",
-    "body": "${1:source} instanceof ${2:Object}",
+    "body": "${1:source} instanceof ${2:Class}",
     "description": "instanceof"
   },
 
@@ -460,12 +455,12 @@
   "setImmediate": {
     "prefix": "setim",
     "body": "setImmediate(${1:callback}${2})${0}",
-    "description": "setImmediate (use only in node)"
+    "description": "setImmediate (Node.JS)"
   },
   "process nextTick": {
     "prefix": "nextick",
     "body": "process.nextTick(${1});${0}",
-    "description": "process nextTick (use only in node)"
+    "description": "process nextTick (Node.JS)"
   },
 
   "insert 'use strict' statement": {
