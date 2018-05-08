@@ -1,5 +1,13 @@
 # Hyper JavaScript Snippets Changelog
 
+# 1.3.0
+
+* ADDED
+  * `typ` for TypeScript `type`.
+  * `dp` for destructuring parameter.
+* MODIFIED
+  * Add "ES2015" label for `la`, `ca`, `vda`, `lda`, `cda` in Declarations.
+
 # 1.2.0
 
 * MODIFIED
@@ -18,7 +26,7 @@
 
 ## 1.1.0
 
-* ADD
+* ADDED
   * 3 new destructuring assigment for `var`, `let`, and `const`.
 * MODIFIED
   * `var`, `let`, and `const` remove the end semicolon and adjust the cursor point.

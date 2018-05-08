@@ -7,27 +7,27 @@
   "let assignment": {
     "prefix": "la",
     "body": "let ${1} = ${0}",
-    "description": "let assignment"
+    "description": "let assignment (ES2015)"
   },
   "const assignment": {
     "prefix": "ca",
     "body": "const ${1} = ${0}",
-    "description": "const assignment"
+    "description": "const assignment (ES2015)"
   },
   "var destructuring assignment": {
     "prefix": "vda",
     "body": "var {${2}} = ${1}${0}",
-    "description": "var destructuring assignment"
+    "description": "var destructuring assignment (ES2015)"
   },
   "let destructuring assignment": {
     "prefix": "lda",
     "body": "let {${2}} = ${1}${0}",
-    "description": "let destructuring assignment"
+    "description": "let destructuring assignment (ES2015)"
   },
   "const destructuring assignment": {
     "prefix": "cda",
     "body": "const {${2}} = ${1}${0}",
-    "description": "const destructuring assignment"
+    "description": "const destructuring assignment (ES2015)"
   },
 
   "if statement": {
@@ -112,6 +112,11 @@
     "description": "try/catch/finally"
   },
 
+  "destructuring parameter": {
+    "prefix": "dp",
+    "body": "{${0}}: ${1:parameter}",
+    "description": "destructuring parameter (ES2015)"
+  },
   "anonymous function": {
     "prefix": "f",
     "body": "function(${1}) {${2}}${0}",
@@ -469,6 +474,12 @@
     "description": "insert 'use strict' statement"
   },
 
+  "type (TypeScript)": {
+    "prefix": "typ",
+    "scope": "typescript",
+    "body": "type ${1:name} = {${2}}${0}",
+    "description": "type (TypeScript)"
+  },
   "interface (TypeScript)": {
     "prefix": "int",
     "scope": "typescript",

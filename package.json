@@ -1,7 +1,7 @@
 {
   "name": "hyper-javascript-snippets",
   "description": "A collection of snippets that cover JavaScript ecosystem for VS Code",
-  "version": "1.2.0",
+  "version": "1.3.0",
   "displayName": "Hyper JavaScript Snippets",
   "publisher": "t7yang",
   "icon": "images/hyper-js.png",
