@@ -98,7 +98,7 @@
   },
   "try/catch": {
     "prefix": "trycatch",
-    "body": "try {${0}} catch (error) (${1}) {${2}}",
+    "body": "try {${0}} catch (error) {${1}}",
     "description": "try/catch"
   },
   "try/finally": {
@@ -108,7 +108,7 @@
   },
   "try/catch/finally": {
     "prefix": "tcf",
-    "body": "try {${0}} catch (${1}) {${2}} finally {${3}}",
+    "body": "try {${0}} catch (error) {${1}} finally {${2}}",
     "description": "try/catch/finally"
   },
 
