@@ -1,5 +1,12 @@
 # Hyper JavaScript Snippets Changelog
 
+# 1.3.1
+
+* MODIFIED
+  * `trycatch` rename to `tc`.
+* FIXED
+  * Remove `trycatch` and `tcf` redundant `(${1})`.
+
 # 1.3.0
 
 * ADDED
