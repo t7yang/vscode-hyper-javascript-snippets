@@ -97,7 +97,7 @@
     "description": "while loop"
   },
   "try/catch": {
-    "prefix": "trycatch",
+    "prefix": "tc",
     "body": "try {${0}} catch (error) {${1}}",
     "description": "try/catch"
   },

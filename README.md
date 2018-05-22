@@ -57,17 +57,17 @@ Inappropriate placeholder may mess up everything, even intellisense. Placeholder
 | `case`    | switch's case     | <code>case ${1} :<br>&nbsp;&nbsp;${0}</code>                                                                                                         |
 
 ### Iteration
-| Prefix     | Desc                   | Body                                                                                                                                          |
-| ---------: | ---------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
-| `for`      | for loop               | <code>for (${1} ; ${2} ; ${3}) {<br>&nbsp;&nbsp;${0}<br>}</code>                                                                              |
-| `forarr`   | for loop array         | <code>for (let ${1} = 0, ${2} = ${3}.length; ${1} < ${2}; ${1}++) {<br>&nbsp;&nbsp;${0}<br>}</code>                                           |
-| `rforarr`  | reverse for loop array | <code>for (let ${1} = ${2}.length - 1; ${1} >= 0; ${1}--) {<br>&nbsp;&nbsp;${0}<br>}</code>                                                   |
-| `forin`    | for in loop            | <code>for (const ${1} in ${2}) {<br>&nbsp;&nbsp;if (${2}.hasOwnProperty(${1})) {<br>&nbsp;&nbsp;&nbsp;&nbsp;${0}<br>&nbsp;&nbsp;}<br>}</code> |
-| `forof`    | for of loop (ES2015)   | <code>for (const ${1} of ${2}) {<br>&nbsp;&nbsp;${0}<br>}</code>                                                                              |
-| `while`    | while loop             | `while (${1}) {${0}}`                                                                                                                         |
-| `trycatch` | try/catch              | `try {${0}} catch (error) {${1}}`                                                                                                             |
-| `tryfin`   | try/finally            | `try {${0}} finally {${1}}`                                                                                                                   |
-| `tcf`      | try/catch/finally      | `try {${0}} catch (error) {${1}} finally {${2}}`                                                                                              |
+| Prefix    | Desc                   | Body                                                                                                                                          |
+| --------: | ---------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
+| `for`     | for loop               | <code>for (${1} ; ${2} ; ${3}) {<br>&nbsp;&nbsp;${0}<br>}</code>                                                                              |
+| `forarr`  | for loop array         | <code>for (let ${1} = 0, ${2} = ${3}.length; ${1} < ${2}; ${1}++) {<br>&nbsp;&nbsp;${0}<br>}</code>                                           |
+| `rforarr` | reverse for loop array | <code>for (let ${1} = ${2}.length - 1; ${1} >= 0; ${1}--) {<br>&nbsp;&nbsp;${0}<br>}</code>                                                   |
+| `forin`   | for in loop            | <code>for (const ${1} in ${2}) {<br>&nbsp;&nbsp;if (${2}.hasOwnProperty(${1})) {<br>&nbsp;&nbsp;&nbsp;&nbsp;${0}<br>&nbsp;&nbsp;}<br>}</code> |
+| `forof`   | for of loop (ES2015)   | <code>for (const ${1} of ${2}) {<br>&nbsp;&nbsp;${0}<br>}</code>                                                                              |
+| `while`   | while loop             | `while (${1}) {${0}}`                                                                                                                         |
+| `tc`      | try/catch              | `try {${0}} catch (error) {${1}}`                                                                                                             |
+| `tryfin`  | try/finally            | `try {${0}} finally {${1}}`                                                                                                                   |
+| `tcf`     | try/catch/finally      | `try {${0}} catch (error) {${1}} finally {${2}}`                                                                                              |
 
 ### Functions
 | Prefix   | Desc                                           | Body                                   |
