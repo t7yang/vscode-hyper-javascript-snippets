@@ -190,7 +190,7 @@ Inappropriate placeholder may mess up everything, even intellisense. Placeholder
 ### TypeScript
 | Prefix | Desc                   | Body                             |
 | -----: | ---------------------- | -------------------------------- |
-| `typ`  | type (TypeScript)      | `type ${1:name} = {${2}}${0}`    |
+| `typ`  | type (TypeScript)      | `type ${1:name} = ${0}`          |
 | `int`  | interface (TypeScript) | `interface ${1:name} {${2}}${0}` |
 | `enum` | enum (TypeScript)      | `enum ${1:name} {${2}}${0}`      |
 | `mod`  | module (TypeScript)    | `module ${1:name} {${2}}${0}`    |

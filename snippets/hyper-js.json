@@ -477,7 +477,7 @@
   "type (TypeScript)": {
     "prefix": "typ",
     "scope": "typescript",
-    "body": "type ${1:name} = {${2}}${0}",
+    "body": "type ${1:name} = ${0}",
     "description": "type (TypeScript)"
   },
   "interface (TypeScript)": {
