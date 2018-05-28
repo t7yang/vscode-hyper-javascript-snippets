@@ -32,8 +32,6 @@ Newline is added Only if it is necessary (like `switch case`). You who determine
 #### Rule 4: Placeholder only if needed
 Inappropriate placeholder may mess up everything, even intellisense. Placeholder is added only if it does not break anything or intellisense break without it.
 
-#### Known issues
-* Snippets related to module like `import`, `require`, and `export` are without `''` at the path place. This because intellisense extensions may not work properly if there is a existing `''`.
 
 ### Declarations
 | Prefix | Desc                                    | Body                         |
@@ -130,26 +128,26 @@ Inappropriate placeholder may mess up everything, even intellisense. Placeholder
 | `pfin` | Promise.finally  | `${1:promise}.finally(${2})${0}` |
 
 ### ES2015 Modules
-| Prefix   | Desc                          | Body                                     |
-| -------: | ----------------------------- | ---------------------------------------- |
-| `exp`    | export (ES2015)               | `export ${0}`                            |
-| `expd`   | export default (ES2015)       | `export default ${0}`                    |
-| `expas`  | export as (ES2015)            | `export { ${1} as ${2} };${0}`           |
-| `expf`   | export from (ES2015)          | `export ${2:name} from ${1}${0}`         |
-| `import` | import (ES2015)               | `import ${1}`                            |
-| `imp`    | import module (ES2015)        | `import ${2:name} from ${1}${0}`         |
-| `impas`  | import module as (ES2015)     | `import ${2:name} as ${3} from ${1}${0}` |
-| `impall` | import module all as (ES2015) | `import * as ${2} from ${1}${0}`         |
+| Prefix   | Desc                          | Body                                        |
+| -------: | ----------------------------- | ------------------------------------------- |
+| `exp`    | export (ES2015)               | `export ${0}`                               |
+| `expd`   | export default (ES2015)       | `export default ${0}`                       |
+| `expas`  | export as (ES2015)            | `export { ${1} as ${2} };${0}`              |
+| `expf`   | export from (ES2015)          | `export ${2:name} from '${1}';${0}`         |
+| `import` | import (ES2015)               | `import ${1}`                               |
+| `imp`    | import module (ES2015)        | `import ${2:name} from '${1}';${0}`         |
+| `impas`  | import module as (ES2015)     | `import ${2:name} as ${3} from '${1}';${0}` |
+| `impall` | import module all as (ES2015) | `import * as ${2} from '${1}';${0}`         |
 
 ### Node.js
-| Prefix    | Desc                   | Body                                   |
-| --------: | ---------------------- | -------------------------------------- |
-| `cb`      | Node.js style callback | `(err, ${1:response}) => {${0}}`       |
-| `require` | require                | `require(${1:path})${0}`               |
-| `req`     | require assignment     | `const ${2:name} = require(${1});${0}` |
-| `em`      | exports.member         | `exports.${1} = ${2};${0}`             |
-| `me`      | module.exports         | `module.exports = ${1}${0}`            |
-| `on`      | event handler          | `on('${1:event}', ${2:callback});${0}` |
+| Prefix    | Desc                   | Body                                     |
+| --------: | ---------------------- | ---------------------------------------- |
+| `cb`      | Node.js style callback | `(err, ${1:response}) => {${0}}`         |
+| `require` | require                | `require(${1:path})${0}`                 |
+| `req`     | require assignment     | `const ${2:name} = require('${1}');${0}` |
+| `em`      | exports.member         | `exports.${1} = ${2};${0}`               |
+| `me`      | module.exports         | `module.exports = ${1}${0}`              |
+| `on`      | event handler          | `on('${1:event}', ${2:callback});${0}`   |
 
 ### BDD Testing (Mocha, Jasmine, etc.)
 | Prefix | Desc              | Body                                                                                                  |
