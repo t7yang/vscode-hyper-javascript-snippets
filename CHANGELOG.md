@@ -1,5 +1,11 @@
 # Hyper JavaScript Snippets Changelog
 
+# 1.3.2
+
+* MODIFIED
+  * TypeScript type default right side as empty rather than object.
+  * All `import`, `export`, and `require` with path now default with single quote and end semicolon (no more path intellisense issue).
+
 # 1.3.1
 
 * MODIFIED
