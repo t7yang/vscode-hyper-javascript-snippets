@@ -330,13 +330,8 @@
   },
   "import module as (ES2015)": {
     "prefix": "impas",
-    "body": "import ${2:name} as ${3} from '${1}';${0}",
+    "body": "import ${2:*} as ${3:name} from '${1}';${0}",
     "description": "import module as (ES2015)"
-  },
-  "import module all as (ES2015)": {
-    "prefix": "impall",
-    "body": "import * as ${2} from '${1}';${0}",
-    "description": "import module all as (ES2015)"
   },
 
   "Node.js style callback": {

@@ -128,16 +128,15 @@ Inappropriate placeholder may mess up everything, even intellisense. Placeholder
 | `pfin` | Promise.finally  | `${1:promise}.finally(${2})${0}` |
 
 ### ES2015 Modules
-| Prefix   | Desc                          | Body                                        |
-| -------: | ----------------------------- | ------------------------------------------- |
-| `exp`    | export (ES2015)               | `export ${0}`                               |
-| `expd`   | export default (ES2015)       | `export default ${0}`                       |
-| `expas`  | export as (ES2015)            | `export { ${1} as ${2} };${0}`              |
-| `expf`   | export from (ES2015)          | `export ${2:name} from '${1}';${0}`         |
-| `import` | import (ES2015)               | `import ${1}`                               |
-| `imp`    | import module (ES2015)        | `import ${2:name} from '${1}';${0}`         |
-| `impas`  | import module as (ES2015)     | `import ${2:name} as ${3} from '${1}';${0}` |
-| `impall` | import module all as (ES2015) | `import * as ${2} from '${1}';${0}`         |
+| Prefix   | Desc                      | Body                                          |
+| -------: | ------------------------- | --------------------------------------------- |
+| `exp`    | export (ES2015)           | `export ${0}`                                 |
+| `expd`   | export default (ES2015)   | `export default ${0}`                         |
+| `expas`  | export as (ES2015)        | `export { ${1} as ${2} };${0}`                |
+| `expf`   | export from (ES2015)      | `export ${2:name} from '${1}';${0}`           |
+| `import` | import (ES2015)           | `import ${1}`                                 |
+| `imp`    | import module (ES2015)    | `import ${2:name} from '${1}';${0}`           |
+| `impas`  | import module as (ES2015) | `import ${2:*} as ${3:name} from '${1}';${0}` |
 
 ### Node.js
 | Prefix    | Desc                   | Body                                     |
