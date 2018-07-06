@@ -16,17 +16,17 @@
   },
   "var destructuring assignment": {
     "prefix": "vda",
-    "body": "var {${2}} = ${1}${0}",
+    "body": "var ${2} = ${1}${0}",
     "description": "var destructuring assignment (ES2015)"
   },
   "let destructuring assignment": {
     "prefix": "lda",
-    "body": "let {${2}} = ${1}${0}",
+    "body": "let ${2} = ${1}${0}",
     "description": "let destructuring assignment (ES2015)"
   },
   "const destructuring assignment": {
     "prefix": "cda",
-    "body": "const {${2}} = ${1}${0}",
+    "body": "const ${2} = ${1}${0}",
     "description": "const destructuring assignment (ES2015)"
   },
 
