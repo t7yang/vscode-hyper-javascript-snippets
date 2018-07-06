@@ -370,52 +370,6 @@
     "description": "event handler"
   },
 
-  "describe": {
-    "prefix": "desc",
-    "body": "describe('${1:description}', ${2:callback});${0}",
-    "description": "describe"
-  },
-  "context": {
-    "prefix": "cont",
-    "body": "context('${1:description}', ${2:callback});${0}",
-    "description": "context"
-  },
-  "it": {
-    "prefix": "it",
-    "body": "it('${1:description}', ${2:callback});${0}",
-    "description": "it"
-  },
-  "it synchronous": {
-    "prefix": "its",
-    "body": "it('${1:description}', ${2:callback});${0}",
-    "description": "it synchronous"
-  },
-  "it asynchronous": {
-    "prefix": "ita",
-    "body": "it('${1:description}', (done) => {\n\t${2}\n\tdone();\n});${0}",
-    "description": "it asynchronous"
-  },
-  "before test suite": {
-    "prefix": "bf",
-    "body": "before(${1:callback});${0}",
-    "description": "before test suite"
-  },
-  "before each test": {
-    "prefix": "bfe",
-    "body": "beforeEach(${1:callback});${0}",
-    "description": "before each test"
-  },
-  "after test suite": {
-    "prefix": "aft",
-    "body": "after(${1:callback});${0}",
-    "description": "after test suite"
-  },
-  "after each test": {
-    "prefix": "afe",
-    "body": "afterEach(${1:callback});${0}",
-    "description": "after each test"
-  },
-
   "console.log": {
     "prefix": "cl",
     "body": "console.log(${1})${0}",

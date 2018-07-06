@@ -149,19 +149,6 @@ Inappropriate placeholder may mess up everything, even intellisense. Placeholder
 | `me`      | module.exports         | `module.exports = ${1}${0}`              |
 | `on`      | event handler          | `on('${1:event}', ${2:callback});${0}`   |
 
-### BDD Testing (Mocha, Jasmine, etc.)
-| Prefix | Desc              | Body                                                                                                  |
-| -----: | ----------------- | ----------------------------------------------------------------------------------------------------- |
-| `desc` | describe          | `describe('${1:description}', ${2:callback});${0}`                                                    |
-| `cont` | context           | `context('${1:description}', ${2:callback});${0}`                                                     |
-| `it`   | it                | `it('${1:description}', ${2:callback});${0}`                                                          |
-| `its`  | it synchronous    | `it('${1:description}', ${2:callback});${0}`                                                          |
-| `ita`  | it asynchronous   | <code>it('${1:description}', (done) => {<br>&nbsp;&nbsp;${2}<br>&nbsp;&nbsp;done();<br>});${0}</code> |
-| `bf`   | before test suite | `before(${1:callback});${0}`                                                                          |
-| `bfe`  | before each test  | `beforeEach(${1:callback});${0}`                                                                      |
-| `aft`  | after test suite  | `after(${1:callback});${0}`                                                                           |
-| `afe`  | after each test   | `afterEach(${1:callback});${0}`                                                                       |
-
 ### Console
 | Prefix | Desc                  | Body                              |
 | -----: | --------------------- | --------------------------------- |
