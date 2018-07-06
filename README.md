@@ -70,7 +70,7 @@ Inappropriate placeholder may mess up everything, even intellisense. Placeholder
 ### Functions
 | Prefix   | Desc                                           | Body                                   |
 | -------: | ---------------------------------------------- | -------------------------------------- |
-| `dp`     | destructuring parameter (ES2015)               | `{${0}}: ${1:parameter}`               |
+| `td`     | type destructuring (TypeScript)                | `${2} : ${1:type}$0`                   |
 | `f`      | anonymous function                             | `function(${1}) {${2}}${0}`            |
 | `fn`     | named function                                 | `function ${1}(${2}) {${3}}${0}`       |
 | `af`     | arrow function (ES2015)                        | `(${1}) => ${2}`                       |

@@ -112,10 +112,10 @@
     "description": "try/catch/finally"
   },
 
-  "destructuring parameter": {
-    "prefix": "dp",
-    "body": "{${0}}: ${1:parameter}",
-    "description": "destructuring parameter (ES2015)"
+  "type destructuring": {
+    "prefix": "td",
+    "body": "${2} : ${1:type}$0",
+    "description": "type destructuring (TypeScript)"
   },
   "anonymous function": {
     "prefix": "f",
