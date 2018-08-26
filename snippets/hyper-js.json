@@ -15,17 +15,17 @@
     "description": "const assignment (ES2015)"
   },
   "var destructuring assignment": {
-    "prefix": "vda",
+    "prefix": "vad",
     "body": "var ${2} = ${1}${0}",
     "description": "var destructuring assignment (ES2015)"
   },
   "let destructuring assignment": {
-    "prefix": "lda",
+    "prefix": "lad",
     "body": "let ${2} = ${1}${0}",
     "description": "let destructuring assignment (ES2015)"
   },
   "const destructuring assignment": {
-    "prefix": "cda",
+    "prefix": "cad",
     "body": "const ${2} = ${1}${0}",
     "description": "const destructuring assignment (ES2015)"
   },

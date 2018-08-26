@@ -39,9 +39,9 @@ Inappropriate placeholder may mess up everything, even intellisense. Placeholder
 | `va`   | var assignment                          | `var ${1} = ${0}`       |
 | `la`   | let assignment (ES2015)                 | `let ${1} = ${0}`       |
 | `ca`   | const assignment (ES2015)               | `const ${1} = ${0}`     |
-| `vda`  | var destructuring assignment (ES2015)   | `var ${2} = ${1}${0}`   |
-| `lda`  | let destructuring assignment (ES2015)   | `let ${2} = ${1}${0}`   |
-| `cda`  | const destructuring assignment (ES2015) | `const ${2} = ${1}${0}` |
+| `vad`  | var destructuring assignment (ES2015)   | `var ${2} = ${1}${0}`   |
+| `lad`  | let destructuring assignment (ES2015)   | `let ${2} = ${1}${0}`   |
+| `cad`  | const destructuring assignment (ES2015) | `const ${2} = ${1}${0}` |
 
 ### Conditional
 | Prefix    | Desc              | Body                                                                                                                                                 |
