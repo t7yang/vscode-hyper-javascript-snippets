@@ -318,15 +318,15 @@
     "body": "export ${2:name} from '${1}';${0}",
     "description": "export from (ES2015)"
   },
-  "import (ES2015)": {
-    "prefix": "import",
-    "body": "import ${1}",
-    "description": "import module (ES2015)"
-  },
   "import module (ES2015)": {
     "prefix": "imp",
     "body": "import ${2:name} from '${1}';${0}",
     "description": "import module (ES2015)"
+  },
+  "import file (ES2015)": {
+    "prefix": "impf",
+    "body": "import '${1}';${0}",
+    "description": "import file (ES2015)"
   },
   "import module as (ES2015)": {
     "prefix": "impas",
