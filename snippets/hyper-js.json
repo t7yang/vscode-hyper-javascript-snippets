@@ -51,7 +51,7 @@
     "description": "else if statement"
   },
   "ternary operator": {
-    "prefix": "ternary",
+    "prefix": "ter",
     "body": "${1} ? ${2} : ${3}",
     "description": "ternary operator"
   },
@@ -70,16 +70,6 @@
     "prefix": "for",
     "body": "for (${1} ; ${2} ; ${3}) {\n\t${0}\n}",
     "description": "for loop"
-  },
-  "for loop array": {
-    "prefix": "forarr",
-    "body": "for (let ${1} = 0, ${2} = ${3}.length; ${1} < ${2}; ${1}++) {\n\t${0}\n}",
-    "description": "for loop array"
-  },
-  "reverse for loop array": {
-    "prefix": "rforarr",
-    "body": "for (let ${1} = ${2}.length - 1; ${1} >= 0; ${1}--) {\n\t${0}\n}",
-    "description": "reverse for loop array"
   },
   "for in loop": {
     "prefix": "forin",
@@ -147,21 +137,6 @@
     "body": "(${2})(${1})${0}",
     "description": "immediately-invoked function expression (IIFE)"
   },
-  "function apply": {
-    "prefix": "fapply",
-    "body": "${1}.apply(${2:this})${0}",
-    "description": "function apply"
-  },
-  "function call": {
-    "prefix": "fcall",
-    "body": "${1}.call(${2:this})${0}",
-    "description": "function call"
-  },
-  "function bind": {
-    "prefix": "fbind",
-    "body": "${1}.bind(${2:this})${0}",
-    "description": "function bind"
-  },
   "generator function (ES2015)": {
     "prefix": "gf",
     "body": "function* (${1}) {${0}}",
@@ -194,29 +169,14 @@
     "body": "{ ${1}: ${2}, }${0}",
     "description": "object literal"
   },
-  "key/value pair": {
-    "prefix": "kv",
-    "body": "${1}: ${2},",
-    "description": "key/value pair"
-  },
-  "Object.assign": {
-    "prefix": "oa",
-    "body": "Object.assign(${1:dest}, ${2:source})",
-    "description": "Object.assign"
-  },
-  "Object.assign copy (shallow clone)": {
-    "prefix": "oc",
-    "body": "Object.assign({}, ${1:original}, ${2:source})",
-    "description": "Object.assign copy (shallow clone)"
-  },
 
   "class (ES2015)": {
-    "prefix": "c",
+    "prefix": "cs",
     "body": "class ${1} {\n\t${0}\n}",
     "description": "class (ES2015)"
   },
   "class extends (ES2015)": {
-    "prefix": "cex",
+    "prefix": "cse",
     "body": "class ${1} extends ${2:base} {\n\t${0}\n}",
     "description": "class extends (ES2015)"
   },
@@ -226,12 +186,12 @@
     "description": "class constructor (ES2015)"
   },
   "method (ES2015)": {
-    "prefix": "cm",
+    "prefix": "csm",
     "body": "${1:name}(${2}) {${0}}",
     "description": "method (ES2015)"
   },
   "async method (ES2015)": {
-    "prefix": "acm",
+    "prefix": "csma",
     "body": "async ${1:name}(${2}) {${0}}",
     "description": "async method (ES2015)"
   },
@@ -250,16 +210,6 @@
     "body": "get ${1:property}() {${0}}\n\nset ${1:property}(${2:value}) {}",
     "description": "getter and setter (ES2015)"
   },
-  "prototypal constructor": {
-    "prefix": "pctor",
-    "body": "var ${1:Class} = function(${2}) {${0}};",
-    "description": "prototypal constructor"
-  },
-  "prototype method": {
-    "prefix": "proto",
-    "body": "${1:Class}.prototype.${2:method} = function(${3}) {${0}};",
-    "description": "prototype method"
-  },
 
   "typeof": {
     "prefix": "tof",
@@ -273,24 +223,24 @@
   },
 
   "Promise (ES2015)": {
-    "prefix": "p",
+    "prefix": "pr",
     "body": "new Promise(${0})",
     "description": "Promise (ES2015)"
   },
-  "Promise.th": {
-    "prefix": "th",
-    "body": "${1:promise}.then(${2})${0}",
-    "description": "Promise.then"
+  "Promise resolve (ES2015)": {
+    "prefix": "prs",
+    "body": "Promise.resolve(${1})${0}",
+    "description": "Promise resolve (ES2015)"
   },
-  "Promise.catch": {
-    "prefix": "cat",
-    "body": "${1:promise}.catch(${2})${0}",
-    "description": "Promise.catch"
+  "Promise reject (ES2015)": {
+    "prefix": "prj",
+    "body": "Promise.reject(${1})${0}",
+    "description": "Promise reject (ES2015)"
   },
-  "Promise.finally": {
-    "prefix": "fin",
-    "body": "${1:promise}.finally(${2})${0}",
-    "description": "Promise.finally"
+  "Promise all (ES2015)": {
+    "prefix": "pra",
+    "body": "Promise.all(${1})${0}",
+    "description": "Promise all (ES2015)"
   },
 
   "export (ES2015)": {
@@ -451,6 +401,6 @@
   "parameter destructuring with type (TypeScript)": {
     "prefix": "pd",
     "body": "${2} : ${1:type}$0",
-    "description": "type destructuring (TypeScript)"
+    "description": "parameter destructuring with type (TypeScript)"
   }
 }
