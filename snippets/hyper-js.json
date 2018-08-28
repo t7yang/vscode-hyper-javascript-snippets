@@ -112,11 +112,6 @@
     "description": "try/catch/finally"
   },
 
-  "type destructuring": {
-    "prefix": "td",
-    "body": "${2} : ${1:type}$0",
-    "description": "type destructuring (TypeScript)"
-  },
   "anonymous function": {
     "prefix": "f",
     "body": "function(${1}) {${2}}${0}",
@@ -452,5 +447,10 @@
     "scope": "typescript",
     "body": "namespace ${1:name} {${2}}${0}",
     "description": "namespace (TypeScript)"
+  },
+  "parameter destructuring with type (TypeScript)": {
+    "prefix": "pd",
+    "body": "${2} : ${1:type}$0",
+    "description": "type destructuring (TypeScript)"
   }
 }
