@@ -127,11 +127,6 @@
     "body": "function ${1}(${2}) {${3}}${0}",
     "description": "named function"
   },
-  "arrow function (ES2015)": {
-    "prefix": "af",
-    "body": "(${1}) => ${2}",
-    "description": "arrow function (ES2015)"
-  },
   "async anonymous function": {
     "prefix": "fa",
     "body": "async function (${1}) {${2}}${0}",
@@ -141,6 +136,11 @@
     "prefix": "fna",
     "body": "async function ${1}(${2}) {${3}}${0}",
     "description": "async named function"
+  },
+  "arrow function (ES2015)": {
+    "prefix": "af",
+    "body": "(${1}) => ${2}",
+    "description": "arrow function (ES2015)"
   },
   "async arrow function (ES2015)": {
     "prefix": "afa",
