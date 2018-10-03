@@ -1,5 +1,11 @@
 # Hyper JavaScript Snippets Changelog
 
+## 2.0.1
+
+- Modified
+  - Remove go to end tab stop for all `function` relative snippets.
+  - Update README to explain "no intellisense" issue.
+
 ## 2.0.0
 
 A big change here, so I decide to make a version upgrade to 2.0.0. I take out many of snippets than may hava a low use rate, should not use, and object methods. If this really bother you, I feel sorry 😢
