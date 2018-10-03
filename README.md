@@ -19,11 +19,12 @@ Install from VSCode Extension Marketplace [Hyper JavaScript Snippets](https://ma
 - Use [Prettier](https://prettier.io/) to help you formating your code.
 - Set `"editor.snippetSuggestions": "top"`.
 - Set `"editor.formatOnSave": true,`.
+- Set `"editor.suggest.snippetsPreventQuickSuggestions": false,`.
 
 ## Known issues
 - Moving cursor when typing in snippet break tab stop ([intented](https://github.com/Microsoft/vscode/issues/32790#issuecomment-323655481)), but sometime okey 😩.
   - Can not use "choice" to provide selection, affect: destrucring assignment...
-- There is no intenllisense providing when typing in snippet (VSCode bug maybe).
+- There is no intenllisense providing when typing in snippet by default, turn off `editor.suggest.snippetsPreventQuickSuggestions`.
   - affect: parameter destructuring with type etc.
 - Can not correctly generate paired bracket when there is a character right beside cursor.
   - A space added left side `:`, affect: `switch`, `case`, `pd`, etc.
@@ -63,10 +64,10 @@ Install from VSCode Extension Marketplace [Hyper JavaScript Snippets](https://ma
 ### Functions
 | Prefix | Desc                                           | Body                                   |
 | -----: | ---------------------------------------------- | -------------------------------------- |
-| `f`    | anonymous function                             | `function(${1}) {${2}}${0}`            |
-| `fn`   | named function                                 | `function ${1}(${2}) {${3}}${0}`       |
-| `fa`   | async anonymous function                       | `async function (${1}) {${2}}${0}`     |
-| `fna`  | async named function                           | `async function ${1}(${2}) {${3}}${0}` |
+| `f`    | anonymous function                             | `function(${1}) {${0}}`            |
+| `fn`   | named function                                 | `function ${1}(${2}) {${0}}`       |
+| `fa`   | async anonymous function                       | `async function (${1}) {${0}}`     |
+| `fna`  | async named function                           | `async function ${1}(${2}) {${0}}` |
 | `af`   | arrow function (ES2015)                        | `(${1}) => ${2}`                       |
 | `afa`  | async arrow function (ES2015)                  | `async (${1}) => ${2}`                 |
 | `iife` | immediately-invoked function expression (IIFE) | `(${2})(${1})${0}`                     |

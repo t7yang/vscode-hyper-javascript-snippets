@@ -104,22 +104,22 @@
 
   "anonymous function": {
     "prefix": "f",
-    "body": "function(${1}) {${2}}${0}",
+    "body": "function(${1}) {${0}}",
     "description": "anonymous function"
   },
   "named function": {
     "prefix": "fn",
-    "body": "function ${1}(${2}) {${3}}${0}",
+    "body": "function ${1}(${2}) {${0}}",
     "description": "named function"
   },
   "async anonymous function": {
     "prefix": "fa",
-    "body": "async function (${1}) {${2}}${0}",
+    "body": "async function (${1}) {${0}}",
     "description": "async anonymous function"
   },
   "async named function": {
     "prefix": "fna",
-    "body": "async function ${1}(${2}) {${3}}${0}",
+    "body": "async function ${1}(${2}) {${0}}",
     "description": "async named function"
   },
   "arrow function (ES2015)": {
