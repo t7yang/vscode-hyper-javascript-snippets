@@ -1,5 +1,11 @@
 # Hyper JavaScript Snippets Changelog
 
+# 2.0.2
+
+- Modified
+  - Review all snippets and make cursor end in right position.
+  - Fix inconsistent `ol` between README and snippet.
+
 ## 2.0.1
 
 - Modified
