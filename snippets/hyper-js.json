@@ -52,7 +52,7 @@
   },
   "ternary operator": {
     "prefix": "ter",
-    "body": "${1} ? ${2} : ${3}",
+    "body": "${1} ? ${2} : ${0}",
     "description": "ternary operator"
   },
   "switch case": {
@@ -124,12 +124,12 @@
   },
   "arrow function (ES2015)": {
     "prefix": "af",
-    "body": "(${1}) => ${2}",
+    "body": "(${1}) => ${0}",
     "description": "arrow function (ES2015)"
   },
   "async arrow function (ES2015)": {
     "prefix": "afa",
-    "body": "async (${1}) => ${2}",
+    "body": "async (${1}) => ${0}",
     "description": "async arrow function (ES2015)"
   },
   "immediately-invoked function expression (IIFE)": {
@@ -166,7 +166,7 @@
 
   "object literal": {
     "prefix": "ol",
-    "body": "{ ${1}: ${2}, }${0}",
+    "body": "{ ${1}: ${0} }",
     "description": "object literal"
   },
 
@@ -213,12 +213,12 @@
 
   "typeof": {
     "prefix": "tof",
-    "body": "typeof ${1:source} === '${2:type}'",
+    "body": "typeof ${1:source} === '${0:type}'",
     "description": "typeof"
   },
   "instanceof": {
     "prefix": "iof",
-    "body": "${1:source} instanceof ${2:Class}",
+    "body": "${1:source} instanceof ${0:Class}",
     "description": "instanceof"
   },
 

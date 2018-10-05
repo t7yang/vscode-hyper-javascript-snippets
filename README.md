@@ -46,7 +46,7 @@ Install from VSCode Extension Marketplace [Hyper JavaScript Snippets](https://ma
 | `else`   | else statement    | `else {${0}}`                                                                                                                                        |
 | `ifel`   | if/else statement | `if (${1}) {${2}} else {${0}}`                                                                                                                       |
 | `elif`   | else if statement | `else if (${1}) {${0}}`                                                                                                                              |
-| `ter`    | ternary operator  | `${1} ? ${2} : ${3}`                                                                                                                                 |
+| `ter`    | ternary operator  | `${1} ? ${2} : ${0}`                                                                                                                                 |
 | `switch` | switch case       | <code>switch (${1}) {<br>&nbsp;&nbsp;case ${2} :<br>&nbsp;&nbsp;&nbsp;&nbsp;$0<br>&nbsp;&nbsp;default:<br>&nbsp;&nbsp;&nbsp;&nbsp;break;<br>}</code> |
 | `case`   | switch's case     | <code>case ${1} :<br>&nbsp;&nbsp;${0}</code>                                                                                                         |
 
@@ -68,8 +68,8 @@ Install from VSCode Extension Marketplace [Hyper JavaScript Snippets](https://ma
 | `fn`   | named function                                 | `function ${1}(${2}) {${0}}`       |
 | `fa`   | async anonymous function                       | `async function (${1}) {${0}}`     |
 | `fna`  | async named function                           | `async function ${1}(${2}) {${0}}` |
-| `af`   | arrow function (ES2015)                        | `(${1}) => ${2}`                       |
-| `afa`  | async arrow function (ES2015)                  | `async (${1}) => ${2}`                 |
+| `af`   | arrow function (ES2015)                        | `(${1}) => ${0}`                       |
+| `afa`  | async arrow function (ES2015)                  | `async (${1}) => ${0}`                 |
 | `iife` | immediately-invoked function expression (IIFE) | `(${2})(${1})${0}`                     |
 | `gf`   | anonymous generator function (ES2015)          | `function* (${1}) {${0}}`              |
 | `gfa`  | async generator function (ES2018)              | `async function* (${1}) {${0}}`        |
@@ -84,7 +84,7 @@ Install from VSCode Extension Marketplace [Hyper JavaScript Snippets](https://ma
 ### Objects
 | Prefix | Desc           | Body              |
 | -----: | -------------- | ----------------- |
-| `ol`   | object literal | `{ ${1}: ${2}, }` |
+| `ol`   | object literal | `{ ${1}: ${0} }` |
 
 ### Classes
 | Prefix | Desc                       | Body                                                                            |
@@ -101,8 +101,8 @@ Install from VSCode Extension Marketplace [Hyper JavaScript Snippets](https://ma
 ### Types
 | Prefix | Desc       | Body                                 |
 | -----: | ---------- | ------------------------------------ |
-| `tof`  | typeof     | `typeof ${1:source} === '${2:type}'` |
-| `iof`  | instanceof | `${1:source} instanceof ${2:Class}`  |
+| `tof`  | typeof     | `typeof ${1:source} === '${0:type}'` |
+| `iof`  | instanceof | `${1:source} instanceof ${0:Class}`  |
 
 ### Promises
 | Prefix | Desc                     | Body                        |
