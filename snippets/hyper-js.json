@@ -357,7 +357,7 @@
     "description": "setImmediate (Node.JS)"
   },
   "process nextTick": {
-    "prefix": "nextick",
+    "prefix": "nt",
     "body": "process.nextTick(${1});${0}",
     "description": "process nextTick (Node.JS)"
   },
