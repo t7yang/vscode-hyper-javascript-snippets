@@ -1,5 +1,12 @@
 # Hyper JavaScript Snippets Changelog
 
+# 2.0.3
+
+- Modified
+  - Replace `nexttick` to `nt`.
+- Fixed
+  - Make readme up to date.
+
 # 2.0.2
 
 - Modified
