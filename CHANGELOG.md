@@ -1,21 +1,28 @@
 # Hyper JavaScript Snippets Changelog
 
+# 2.0.4
+
+- Update
+  - Remove go to end tab stop in all destructure related snippets due tab stop unsupport intellisense.
+    - Intellisense not available on source but at least on destructuring.
+    - Not the best but press [end] is a manual alternative.
+
 # 2.0.3
 
-- Modified
+- Update
   - Replace `nexttick` to `nt`.
 - Fixed
   - Make readme up to date.
 
 # 2.0.2
 
-- Modified
+- Update
   - Review all snippets and make cursor end in right position.
   - Fix inconsistent `ol` between README and snippet.
 
 ## 2.0.1
 
-- Modified
+- Update
   - Remove go to end tab stop for all `function` relative snippets.
   - Update README to explain "no intellisense" issue.
 
@@ -29,7 +36,7 @@ A big change here, so I decide to make a version upgrade to 2.0.0. I take out ma
   - `kv`, `oa`, `oc` for object - same as above.
   - `th`, `cat`, `fin` for promise - same as above.
   - `pctor` and `proto` for prototype - use ES2015 `class` instead.
-- Modified
+- Update
   - `vda`, `lda`, and `cda` become `vad`, `lad`, and `cad` - consist to how function prefix work which like a namespace.
   - `import` become `impf` for import - namespace like; not like export, if import without name, it surely for a file path.
   - `p` become `pr` for promise - namespace like.
@@ -43,20 +50,20 @@ A big change here, so I decide to make a version upgrade to 2.0.0. I take out ma
 
 - Deprecated
   - Remove all test snippets, due its should not cover in this extension.
-- Modified
+- Update
   - Combine `impas` and `impall` and remove `impall` and Fixed intellisense broken cause by syntax error.
   - `dp` (destructuring parameter) to `td` (type destructuring), which a big mistake.
   - remove prefill `{}` for destructuring assignment (`vda`, `lda`, `cda`) as well as type destructuring (`td`), cause both array and object support destructuring.
 
 ## 1.3.2
 
-- Modified
+- Update
   - TypeScript type default right side as empty rather than object.
   - All `import`, `export`, and `require` with path now default with single quote and end semicolon (no more path intellisense issue).
 
 ## 1.3.1
 
-- Modified
+- Update
   - `trycatch` rename to `tc`.
 - Fixed
   - Remove `trycatch` and `tcf` redundant `(${1})`.
@@ -66,12 +73,12 @@ A big change here, so I decide to make a version upgrade to 2.0.0. I take out ma
 - Added
   - `typ` for TypeScript `type`.
   - `dp` for destructuring parameter.
-- Modified
+- Update
   - Add "ES2015" label for `la`, `ca`, `vda`, `lda`, `cda` in Declarations.
 
 ## 1.2.0
 
-- Modified
+- Update
   - Remove newline in `gs`, `pctor`, and `proto`.
   - Use more percise term in `tof` and `iof` description.
   - Change label for only in Node.JS from "use only in node" to "Node.JS".
@@ -81,7 +88,7 @@ A big change here, so I decide to make a version upgrade to 2.0.0. I take out ma
 
 ## 1.1.1
 
-- Modified
+- Update
   - Remove space between `function ()` in `f`.
   - Update README.
 
@@ -89,7 +96,7 @@ A big change here, so I decide to make a version upgrade to 2.0.0. I take out ma
 
 - Added
   - 3 new destructuring assigment for `var`, `let`, and `const`.
-- Modified
+- Update
   - `var`, `let`, and `const` remove the end semicolon and adjust the cursor point.
   - Make `if else` and `else if` prefix shorter to `ifel` and `elif`.
   - Remove the `break` in the first `switch` case and `case` to let user determine `return` or `break` to use, but keeping the `default` `break` to ensure even if user forgot to handle it.
@@ -99,12 +106,12 @@ A big change here, so I decide to make a version upgrade to 2.0.0. I take out ma
 
 ## 1.0.4
 
-- Modified
-  - Modified README.
+- Update
+  - Update README.
 
 ## 1.0.3
 
-- Modified
+- Update
   - Add placeholder to variable assignment for avoid syntax error.
 
 ## 1.0.2
