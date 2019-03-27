@@ -16,17 +16,17 @@
   },
   "var destructuring assignment": {
     "prefix": "vad",
-    "body": "var ${2} = ${1}${0}",
+    "body": "var ${0:dest} = ${1}",
     "description": "var destructuring assignment (ES2015)"
   },
   "let destructuring assignment": {
     "prefix": "lad",
-    "body": "let ${2} = ${1}${0}",
+    "body": "let ${0:dest} = ${1}",
     "description": "let destructuring assignment (ES2015)"
   },
   "const destructuring assignment": {
     "prefix": "cad",
-    "body": "const ${2} = ${1}${0}",
+    "body": "const ${0:dest} = ${1}",
     "description": "const destructuring assignment (ES2015)"
   },
 
@@ -400,7 +400,7 @@
   },
   "parameter destructuring with type (TypeScript)": {
     "prefix": "pd",
-    "body": "${2} : ${1:type}$0",
+    "body": "${0:param} : ${1:type}",
     "description": "parameter destructuring with type (TypeScript)"
   }
 }

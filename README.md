@@ -24,20 +24,23 @@ Install from VSCode Extension Marketplace [Hyper JavaScript Snippets](https://ma
 ## Known issues
 - Moving cursor when typing in snippet break tab stop ([intented](https://github.com/Microsoft/vscode/issues/32790#issuecomment-323655481)), but sometime okey 😩.
   - Can not use "choice" to provide selection, affect: destrucring assignment...
-- There is no intenllisense providing when typing in snippet by default, turn off `editor.suggest.snippetsPreventQuickSuggestions`.
-  - affect: parameter destructuring with type etc.
+- There is no intenllisense providing when typing in snippet by default
+  - Affect: parameter destructuring with type etc.
+  - Fix by turn off `editor.suggest.snippetsPreventQuickSuggestions`.
 - Can not correctly generate paired bracket when there is a character right beside cursor.
   - A space added left side `:`, affect: `switch`, `case`, `pd`, etc.
+- Intellisense not available on tab stop status (no way, until code support).
+  - Intellisense is not available on destructuring source (`cad`, `pd`, ...)
 
 ### Declarations
-| Prefix | Desc                                    | Body                    |
-| -----: | --------------------------------------- | ----------------------- |
-|   `va` | var assignment                          | `var ${1} = ${0}`       |
-|   `la` | let assignment (ES2015)                 | `let ${1} = ${0}`       |
-|   `ca` | const assignment (ES2015)               | `const ${1} = ${0}`     |
-|  `vad` | var destructuring assignment (ES2015)   | `var ${2} = ${1}${0}`   |
-|  `lad` | let destructuring assignment (ES2015)   | `let ${2} = ${1}${0}`   |
-|  `cad` | const destructuring assignment (ES2015) | `const ${2} = ${1}${0}` |
+| Prefix | Desc                                    | Body                     |
+| -----: | --------------------------------------- | ------------------------ |
+|   `va` | var assignment                          | `var ${1} = ${0}`        |
+|   `la` | let assignment (ES2015)                 | `let ${1} = ${0}`        |
+|   `ca` | const assignment (ES2015)               | `const ${1} = ${0}`      |
+|  `vad` | var destructuring assignment (ES2015)   | `var ${0:dest} = ${1}`   |
+|  `lad` | let destructuring assignment (ES2015)   | `let ${0:dest} = ${1}`   |
+|  `cad` | const destructuring assignment (ES2015) | `const ${0:dest} = ${1}` |
 
 ### Conditional
 |   Prefix | Desc              | Body                                                                                                                                                 |
@@ -164,4 +167,4 @@ Install from VSCode Extension Marketplace [Hyper JavaScript Snippets](https://ma
 | `enum` | enum (TypeScript)                              | `enum ${1:name} {${2}}${0}`      |
 |  `mod` | module (TypeScript)                            | `module ${1:name} {${2}}${0}`    |
 |  `nam` | namespace (TypeScript)                         | `namespace ${1:name} {${2}}${0}` |
-|   `pd` | parameter destructuring with type (TypeScript) | `${2} : ${1:type}$0`             |
+|   `pd` | parameter destructuring with type (TypeScript) | `${0:param} : ${1:type}`         |
