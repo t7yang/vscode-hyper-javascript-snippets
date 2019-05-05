@@ -102,10 +102,10 @@ Install from VSCode Extension Marketplace [Hyper JavaScript Snippets](https://ma
 |   `gs` | getter and setter (ES2015) | <code>get ${1:property}() {${0}}<br><br>set ${1:property}(${2:value}) {}</code> |
 
 ### Types
-| Prefix | Desc       | Body                                 |
-| -----: | ---------- | ------------------------------------ |
-|  `tof` | typeof     | `typeof ${1:source} === '${0:type}'` |
-|  `iof` | instanceof | `${1:source} instanceof ${0:Class}`  |
+| Prefix | Desc       | Body                                |
+| -----: | ---------- | ----------------------------------- |
+|  `tof` | typeof     | `typeof ${1:source} === ${0}`       |
+|  `iof` | instanceof | `${1:source} instanceof ${0:Class}` |
 
 ### Promises
 | Prefix | Desc                     | Body                        |
