@@ -137,14 +137,15 @@ Install from VSCode Extension Marketplace [Hyper JavaScript Snippets](https://ma
 |      `on` | event handler          | `on('${1:event}', ${2:callback});${0}`   |
 
 ### Console
-| Prefix | Desc                  | Body                              |
-| -----: | --------------------- | --------------------------------- |
-|   `cl` | console.log           | `console.log(${1})${0}`           |
-|   `ce` | console.error         | `console.error(${1})${0}`         |
-|   `cw` | console.warn          | `console.warn(${1})${0}`          |
-|  `cll` | console.log labeled   | `console.log('${1}', ${1})${0}`   |
-|  `cel` | console.error labeled | `console.error('${1}', ${1})${0}` |
-|  `cwl` | console.warn labeled  | `console.warn('${1}', ${1})${0}`  |
+| Prefix | Desc                  | Body                                                                   |
+| -----: | --------------------- | ---------------------------------------------------------------------- |
+|   `cl` | console.log           | `console.log(${1})${0}`                                                |
+|   `ce` | console.error         | `console.error(${1})${0}`                                              |
+|   `cw` | console.warn          | `console.warn(${1})${0}`                                               |
+|  `cll` | console.log labeled   | `console.log('${1}', ${1})${0}`                                        |
+|  `cel` | console.error labeled | `console.error('${1}', ${1})${0}`                                      |
+|  `cwl` | console.warn labeled  | `console.warn('${1}', ${1})${0}`                                       |
+|   `ct` | console.time          | <code>console.time('${1}') <br>${0}<br> console.timeEnd('${1}')</code> |
 
 ### Timers
 |  Prefix | Desc                       | Body                                         |

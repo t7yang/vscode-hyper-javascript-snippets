@@ -340,6 +340,11 @@
     "body": "console.warn('${1}', ${1})${0}",
     "description": "console.warn labeled"
   },
+  "console.time": {
+    "prefix": "ct",
+    "body": "console.time('${1}')\n${0}\nconsole.timeEnd('${1}')",
+    "description": "console.time"
+  },
 
   "setTimeout": {
     "prefix": "sett",
