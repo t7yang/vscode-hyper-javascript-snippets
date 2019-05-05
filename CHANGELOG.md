@@ -1,33 +1,34 @@
 # Hyper JavaScript Snippets Changelog
 
-# 2.0.4
+## 2.1.0
+- Update
+  - Remove placeholder in `tof` for better intellisense support.
+- Feature
+  - Add `ct` for `console.time` (have fun for test time consumption).
 
+## 2.0.4
 - Update
   - Remove go to end tab stop in all destructure related snippets due tab stop unsupport intellisense.
     - Intellisense not available on source but at least on destructuring.
     - Not the best but press [end] is a manual alternative.
 
-# 2.0.3
-
+## 2.0.3
 - Update
   - Replace `nexttick` to `nt`.
 - Fixed
   - Make readme up to date.
 
-# 2.0.2
-
+## 2.0.2
 - Update
   - Review all snippets and make cursor end in right position.
   - Fix inconsistent `ol` between README and snippet.
 
 ## 2.0.1
-
 - Update
   - Remove go to end tab stop for all `function` relative snippets.
   - Update README to explain "no intellisense" issue.
 
 ## 2.0.0
-
 A big change here, so I decide to make a version upgrade to 2.0.0. I take out many of snippets than may hava a low use rate, should not use, and object methods. If this really bother you, I feel sorry 😢
 
 - Deprecated
@@ -43,11 +44,10 @@ A big change here, so I decide to make a version upgrade to 2.0.0. I take out ma
   - `c`, `cex`, `cm`, and `acm` become `cs`, `cse`, `csm`, and `csma` - namespace like.
   - `ternary` become `ter` for ternary - make it shorter.
   - Rewrite README.md, make it more short and clear.
-- Added
+- Feature
   - `prs`, `prj`, and `pra` for promise - static method `resolve`, `reject`, and `all` for Promise.
 
 ## 1.4.0
-
 - Deprecated
   - Remove all test snippets, due its should not cover in this extension.
 - Update
@@ -56,28 +56,24 @@ A big change here, so I decide to make a version upgrade to 2.0.0. I take out ma
   - remove prefill `{}` for destructuring assignment (`vda`, `lda`, `cda`) as well as type destructuring (`td`), cause both array and object support destructuring.
 
 ## 1.3.2
-
 - Update
   - TypeScript type default right side as empty rather than object.
   - All `import`, `export`, and `require` with path now default with single quote and end semicolon (no more path intellisense issue).
 
 ## 1.3.1
-
 - Update
   - `trycatch` rename to `tc`.
 - Fixed
   - Remove `trycatch` and `tcf` redundant `(${1})`.
 
 ## 1.3.0
-
-- Added
+- Feature
   - `typ` for TypeScript `type`.
   - `dp` for destructuring parameter.
 - Update
   - Add "ES2015" label for `la`, `ca`, `vda`, `lda`, `cda` in Declarations.
 
 ## 1.2.0
-
 - Update
   - Remove newline in `gs`, `pctor`, and `proto`.
   - Use more percise term in `tof` and `iof` description.
@@ -87,14 +83,12 @@ A big change here, so I decide to make a version upgrade to 2.0.0. I take out ma
   - Replace `ol` to `slol` and remove `slol`.
 
 ## 1.1.1
-
 - Update
   - Remove space between `function ()` in `f`.
   - Update README.
 
 ## 1.1.0
-
-- Added
+- Feature
   - 3 new destructuring assigment for `var`, `let`, and `const`.
 - Update
   - `var`, `let`, and `const` remove the end semicolon and adjust the cursor point.
@@ -105,25 +99,20 @@ A big change here, so I decide to make a version upgrade to 2.0.0. I take out ma
   - Change `interface, module, namespaces` to `int, mod, nam` to avoid directly same name as TypeScript / JavaScript keyword.
 
 ## 1.0.4
-
 - Update
   - Update README.
 
 ## 1.0.3
-
 - Update
   - Add placeholder to variable assignment for avoid syntax error.
 
 ## 1.0.2
-
 - Fixed
   - Unintended going end of snippets.
 
 ## 1.0.1
-
 - Update README.
 - Add CHANGELOG.
 
 ## 1.0.0
-
 - First release.
