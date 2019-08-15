@@ -1,5 +1,10 @@
 # Hyper JavaScript Snippets Changelog
 
+## 2.2.0
+- Feature
+  - Add `expaf` for export all from
+  - Add `cd` and `cdl` for `console.dir`
+
 ## 2.1.0
 - Update
   - Remove placeholder in `tof` for better intellisense support.
