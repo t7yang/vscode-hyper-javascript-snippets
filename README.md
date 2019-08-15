@@ -122,6 +122,7 @@ Install from VSCode Extension Marketplace [Hyper JavaScript Snippets](https://ma
 |  `expd` | export default (ES2015)   | `export default ${0}`                         |
 | `expas` | export as (ES2015)        | `export { ${1} as ${2} };${0}`                |
 |  `expf` | export from (ES2015)      | `export ${2:name} from '${1}';${0}`           |
+| `expaf` | export all from (ES2015)  | `export * from '${1}';${0}`                   |
 |   `imp` | import module (ES2015)    | `import ${2:name} from '${1}';${0}`           |
 |  `impf` | import file (ES2015)      | `import '${1}';${0}`                          |
 | `impas` | import module as (ES2015) | `import ${2:*} as ${3:name} from '${1}';${0}` |

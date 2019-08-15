@@ -263,6 +263,11 @@
     "body": "export ${2:name} from '${1}';${0}",
     "description": "export from (ES2015)"
   },
+  "export all from (ES2015)": {
+    "prefix": "expaf",
+    "body": "export * from '${1}';${0}",
+    "description": "export all from (ES2015)"
+  },
   "import module (ES2015)": {
     "prefix": "imp",
     "body": "import ${2:name} from '${1}';${0}",
