@@ -1,5 +1,15 @@
 # Hyper JavaScript Snippets Changelog
 
+## 2.3.0
+Two subjects for this update -- "Less is more" and "expression first".
+
+- Dprecated
+  - Remove all snippets relate to generator function due to they can simply replace by normal function snippet plus a `*` (use prettier to auto format position of asterisk).
+- Update
+  - Remove the curly braces in some of the snippets including `if*`, `for*`, and `while` statement (expression first, add curly braces if you need).
+  - Adjust the tab stop order for `try*` snippets, remove error argument (optional error binding, ES2019) to make it optional (still tab stop there).
+  - replace `enum` to `enu`.
+
 ## 2.2.0
 - Feature
   - Add `expaf` for export all from
