@@ -32,22 +32,22 @@
 
   "if statement": {
     "prefix": "if",
-    "body": "if (${1}) {${0}}",
+    "body": "if (${1}) ${0}",
     "description": "if statement"
   },
   "else statement": {
     "prefix": "else",
-    "body": "else {${0}}",
+    "body": "else ${0}",
     "description": "else statement"
   },
   "if/else statement": {
     "prefix": "ifel",
-    "body": "if (${1}) {${2}} else {${0}}",
+    "body": "if (${1}) ${2} else ${0}",
     "description": "if/else statement"
   },
   "else if statement": {
     "prefix": "elif",
-    "body": "else if (${1}) {${0}}",
+    "body": "else if (${1}) ${0}",
     "description": "else if statement"
   },
   "ternary operator": {
@@ -68,7 +68,7 @@
 
   "for loop": {
     "prefix": "for",
-    "body": "for (${1} ; ${2} ; ${3}) {\n\t${0}\n}",
+    "body": "for (${1} ; ${2} ; ${3}) ${0}",
     "description": "for loop"
   },
   "for in loop": {
@@ -78,27 +78,27 @@
   },
   "for of loop (ES2015)": {
     "prefix": "forof",
-    "body": "for (const ${1} of ${2}) {\n\t${0}\n}",
+    "body": "for (const ${1} of ${2}) ${0}",
     "description": "for of loop (ES2015)"
   },
   "while loop": {
     "prefix": "while",
-    "body": "while (${1}) {${0}}",
+    "body": "while (${1}) ${0}",
     "description": "while loop"
   },
   "try/catch": {
     "prefix": "tc",
-    "body": "try {${0}} catch (error) {${1}}",
+    "body": "try {${1}} catch ${2} {${0}}",
     "description": "try/catch"
   },
   "try/finally": {
     "prefix": "tf",
-    "body": "try {${0}} finally {${1}}",
+    "body": "try {${1}} finally {${0}}",
     "description": "try/finally"
   },
   "try/catch/finally": {
     "prefix": "tcf",
-    "body": "try {${0}} catch (error) {${1}} finally {${2}}",
+    "body": "try {${1}} catch ${2} {${3}} finally {${0}}",
     "description": "try/catch/finally"
   },
 
@@ -136,26 +136,6 @@
     "prefix": "iife",
     "body": "(${2})(${1})${0}",
     "description": "immediately-invoked function expression (IIFE)"
-  },
-  "generator function (ES2015)": {
-    "prefix": "gf",
-    "body": "function* (${1}) {${0}}",
-    "description": "generator function (ES2015)"
-  },
-  "async generator function (ES2018)": {
-    "prefix": "gfa",
-    "body": "async function* (${1}) {${0}}",
-    "description": "async generator function (ES2018)"
-  },
-  "named generator function (ES2015)": {
-    "prefix": "gfn",
-    "body": "function* ${1}(${2}) {${0}}",
-    "description": "named generator function (ES2015)"
-  },
-  "async named generator function (ES2018)": {
-    "prefix": "gfna",
-    "body": "async function* ${1}(${2}) {${0}}",
-    "description": "async named generator function (ES2018)"
   },
 
   "sequence of 0..n": {
@@ -401,7 +381,7 @@
     "description": "interface (TypeScript)"
   },
   "enum (TypeScript)": {
-    "prefix": "enum",
+    "prefix": "enu",
     "scope": "typescript",
     "body": "enum ${1:name} {${2}}${0}",
     "description": "enum (TypeScript)"
