@@ -245,7 +245,7 @@
   },
   "export all from (ES2015)": {
     "prefix": "expaf",
-    "body": "export * from '${1}';${0}",
+    "body": "export *${2} from '${1}';${0}",
     "description": "export all from (ES2015)"
   },
   "import module (ES2015)": {
