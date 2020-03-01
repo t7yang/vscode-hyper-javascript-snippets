@@ -1,5 +1,11 @@
 # Hyper JavaScript Snippets Changelog
 
+## 2.3.1
+Keep make prefix shorter
+
+- Update
+  - `else` to `el`, `switch` to `sw`, `for` to `fo`, `forin` to `foi`, `forof` to `fof`, `while` to `wh`.
+
 ## 2.3.0
 Two subjects for this update -- "Less is more" and "expression first".
 
