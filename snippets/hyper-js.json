@@ -36,7 +36,7 @@
     "description": "if statement"
   },
   "else statement": {
-    "prefix": "else",
+    "prefix": "el",
     "body": "else ${0}",
     "description": "else statement"
   },
@@ -56,7 +56,7 @@
     "description": "ternary operator"
   },
   "switch case": {
-    "prefix": "switch",
+    "prefix": "sw",
     "body": "switch (${1}) {\n\tcase ${2} :\n\t\t$0\n\tdefault:\n\t\tbreak;\n}",
     "description": "switch case"
   },
@@ -67,22 +67,22 @@
   },
 
   "for loop": {
-    "prefix": "for",
+    "prefix": "fo",
     "body": "for (${1} ; ${2} ; ${3}) ${0}",
     "description": "for loop"
   },
   "for in loop": {
-    "prefix": "forin",
+    "prefix": "foi",
     "body": "for (const ${1} in ${2}) {\n\tif (${2}.hasOwnProperty(${1})) {\n\t\t${0}\n\t}\n}",
     "description": "for in loop"
   },
   "for of loop (ES2015)": {
-    "prefix": "forof",
+    "prefix": "fof",
     "body": "for (const ${1} of ${2}) ${0}",
     "description": "for of loop (ES2015)"
   },
   "while loop": {
-    "prefix": "while",
+    "prefix": "wh",
     "body": "while (${1}) ${0}",
     "description": "while loop"
   },

@@ -43,26 +43,26 @@ Install from VSCode Extension Marketplace [Hyper JavaScript Snippets](https://ma
 |  `cad` | const destructuring assignment (ES2015) | `const ${0:dest} = ${1}` |
 
 ### Conditional
-|   Prefix | Desc              | Body                                                                                                                                                 |
-| -------: | ----------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
-|     `if` | if statement      | `if (${1}) ${0}`                                                                                                                                     |
-|   `else` | else statement    | `else ${0}`                                                                                                                                          |
-|   `ifel` | if/else statement | `if (${1}) ${2} else ${0}`                                                                                                                           |
-|   `elif` | else if statement | `else if (${1}) ${0}`                                                                                                                                |
-|    `ter` | ternary operator  | `${1} ? ${2} : ${0}`                                                                                                                                 |
-| `switch` | switch case       | <code>switch (${1}) {<br>&nbsp;&nbsp;case ${2} :<br>&nbsp;&nbsp;&nbsp;&nbsp;$0<br>&nbsp;&nbsp;default:<br>&nbsp;&nbsp;&nbsp;&nbsp;break;<br>}</code> |
-|   `case` | switch's case     | <code>case ${1} :<br>&nbsp;&nbsp;${0}</code>                                                                                                         |
+| Prefix | Desc              | Body                                                                                                                                                 |
+| -----: | ----------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
+|   `if` | if statement      | `if (${1}) ${0}`                                                                                                                                     |
+|   `el` | else statement    | `else ${0}`                                                                                                                                          |
+| `ifel` | if/else statement | `if (${1}) ${2} else ${0}`                                                                                                                           |
+| `elif` | else if statement | `else if (${1}) ${0}`                                                                                                                                |
+|  `ter` | ternary operator  | `${1} ? ${2} : ${0}`                                                                                                                                 |
+|   `sw` | switch case       | <code>switch (${1}) {<br>&nbsp;&nbsp;case ${2} :<br>&nbsp;&nbsp;&nbsp;&nbsp;$0<br>&nbsp;&nbsp;default:<br>&nbsp;&nbsp;&nbsp;&nbsp;break;<br>}</code> |
+| `case` | switch's case     | <code>case ${1} :<br>&nbsp;&nbsp;${0}</code>                                                                                                         |
 
 ### Statement
-|  Prefix | Desc                 | Body                                                                                                                                          |
-| ------: | -------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
-|   `for` | for loop             | `for (${1} ; ${2} ; ${3}) ${0}`                                                                                                               |
-| `forin` | for in loop          | <code>for (const ${1} in ${2}) {<br>&nbsp;&nbsp;if (${2}.hasOwnProperty(${1})) {<br>&nbsp;&nbsp;&nbsp;&nbsp;${0}<br>&nbsp;&nbsp;}<br>}</code> |
-| `forof` | for of loop (ES2015) | `for (const ${1} of ${2}) ${0}`                                                                                                               |
-| `while` | while loop           | `while (${1}) ${0}`                                                                                                                           |
-|    `tc` | try/catch            | `try {${1}} catch ${2} {${0}}`                                                                                                                |
-|    `tf` | try/finally          | `try {${1}} finally {${0}}`                                                                                                                   |
-|   `tcf` | try/catch/finally    | `try {${1}} catch ${2} {${3}} finally {${0}}`                                                                                                 |
+| Prefix | Desc                 | Body                                                                                                                                          |
+| -----: | -------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
+|   `fo` | for loop             | `for (${1} ; ${2} ; ${3}) ${0}`                                                                                                               |
+|  `foi` | for in loop          | <code>for (const ${1} in ${2}) {<br>&nbsp;&nbsp;if (${2}.hasOwnProperty(${1})) {<br>&nbsp;&nbsp;&nbsp;&nbsp;${0}<br>&nbsp;&nbsp;}<br>}</code> |
+|  `fof` | for of loop (ES2015) | `for (const ${1} of ${2}) ${0}`                                                                                                               |
+|   `wh` | while loop           | `while (${1}) ${0}`                                                                                                                           |
+|   `tc` | try/catch            | `try {${1}} catch ${2} {${0}}`                                                                                                                |
+|   `tf` | try/finally          | `try {${1}} finally {${0}}`                                                                                                                   |
+|  `tcf` | try/catch/finally    | `try {${1}} catch ${2} {${3}} finally {${0}}`                                                                                                 |
 
 ### Functions
 | Prefix | Desc                                           | Body                               |
@@ -118,7 +118,7 @@ Install from VSCode Extension Marketplace [Hyper JavaScript Snippets](https://ma
 |  `expd` | export default (ES2015)   | `export default ${0}`                         |
 | `expas` | export as (ES2015)        | `export { ${1} as ${2} };${0}`                |
 |  `expf` | export from (ES2015)      | `export ${2:name} from '${1}';${0}`           |
-| `expaf` | export all from (ES2015)  | `export *${2} from '${1}';${0}`                   |
+| `expaf` | export all from (ES2015)  | `export *${2} from '${1}';${0}`               |
 |   `imp` | import module (ES2015)    | `import ${2:name} from '${1}';${0}`           |
 |  `impf` | import file (ES2015)      | `import '${1}';${0}`                          |
 | `impas` | import module as (ES2015) | `import ${2:*} as ${3:name} from '${1}';${0}` |
