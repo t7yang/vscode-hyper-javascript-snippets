@@ -81,6 +81,11 @@
     "body": "for (const ${1} of ${2}) ${0}",
     "description": "for of loop (ES2015)"
   },
+  "for await of loop (ES2018)": {
+    "prefix": "foa",
+    "body": "for await (const ${1} of ${2}) ${0}",
+    "description": "for await of loop (ES2018)"
+  },
   "while loop": {
     "prefix": "wh",
     "body": "while (${1}) ${0}",
