@@ -320,26 +320,6 @@
     "body": "console.dir(${1})${0}",
     "description": "console.dir"
   },
-  "console.log labeled": {
-    "prefix": "cll",
-    "body": "console.log('${1}', ${1})${0}",
-    "description": "console.log labeled"
-  },
-  "console.error labeled": {
-    "prefix": "cel",
-    "body": "console.error('${1}', ${1})${0}",
-    "description": "console.error labeled"
-  },
-  "console.warn labeled": {
-    "prefix": "cwl",
-    "body": "console.warn('${1}', ${1})${0}",
-    "description": "console.warn labeled"
-  },
-  "console.dir labeled": {
-    "prefix": "cwl",
-    "body": "console.dir('${1}', ${1})${0}",
-    "description": "console.dir labeled"
-  },
   "console.time": {
     "prefix": "ct",
     "body": "console.time('${1}')\n${0}\nconsole.timeEnd('${1}')",
