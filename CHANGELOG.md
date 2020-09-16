@@ -2,6 +2,12 @@
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
+## [2.4.0] - 2020-09-16
+### Added
+- Add snippet for `for await of` as `foa`.
+### Removed
+- Remove all labeled console snippets, cause this can be simply console within a object, e.g. `console.log({ name })`.
+
 ## [2.3.1] - 2020-03-02
 Keep making prefix shorter
 ### Changed
