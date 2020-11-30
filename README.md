@@ -22,15 +22,13 @@ Install from VSCode Extension Marketplace [Hyper JavaScript Snippets](https://ma
 - Set `"editor.suggest.snippetsPreventQuickSuggestions": false,`.
 
 ## Known issues
-- Moving cursor when typing in snippet break tab stop ([intented](https://github.com/Microsoft/vscode/issues/32790#issuecomment-323655481)), but sometime okey 😩.
+- Moving cursor when typing in active snippet break tab stop ([intented](https://github.com/Microsoft/vscode/issues/32790#issuecomment-323655481)), but sometime okey 😩.
   - Can not use "choice" to provide selection, affect: destrucring assignment...
-- There is no intenllisense providing when typing in snippet by default
-  - Affect: parameter destructuring with type etc.
-  - Fix by turn off `editor.suggest.snippetsPreventQuickSuggestions`.
+- There is no intenllisense / autocomplete hint when typing in active snippet (VSCode default).
+  - Affect: No more autocomplete hint including any snippet, object methods, or global function .
+  - Turn off `editor.suggest.snippetsPreventQuickSuggestions` help a bit.
 - Can not correctly generate paired bracket when there is a character right beside cursor.
-  - A space added left side `:`, affect: `switch`, `case`, `pd`, etc.
-- Intellisense not available on tab stop status (no way, until code support).
-  - Intellisense is not available on destructuring source (`cad`, `pd`, ...)
+  - A space added before `:`, affect: `sw`, `case`, `pd`, etc.
 
 ### Declarations
 | Prefix | Desc                                    | Body                     |
