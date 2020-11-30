@@ -165,3 +165,5 @@ Install from VSCode Extension Marketplace [Hyper JavaScript Snippets](https://ma
 |  `mod` | module (TypeScript)                            | `module ${1:name} {${2}}${0}`    |
 |  `nam` | namespace (TypeScript)                         | `namespace ${1:name} {${2}}${0}` |
 |   `pd` | parameter destructuring with type (TypeScript) | `${0:param} : ${1:type}`         |
+
+> Only in `typescript` and `typescriptreact` file type.

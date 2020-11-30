@@ -142,6 +142,11 @@
     "body": "(${2})(${1})${0}",
     "description": "immediately-invoked function expression (IIFE)"
   },
+  "parameter destructuring with type (TypeScript)": {
+    "prefix": "pd",
+    "body": "${0:param} : ${1:type}",
+    "description": "parameter destructuring with type (TypeScript)"
+  },
 
   "sequence of 0..n": {
     "prefix": "seq",
@@ -207,10 +212,10 @@
     "description": "instanceof"
   },
 
-  "Promise (ES2015)": {
+  "Promise new (ES2015)": {
     "prefix": "pr",
     "body": "new Promise(${0})",
-    "description": "Promise (ES2015)"
+    "description": "Promise new (ES2015)"
   },
   "Promise resolve (ES2015)": {
     "prefix": "prs",
@@ -382,10 +387,5 @@
     "scope": "typescript",
     "body": "namespace ${1:name} {${2}}${0}",
     "description": "namespace (TypeScript)"
-  },
-  "parameter destructuring with type (TypeScript)": {
-    "prefix": "pd",
-    "body": "${0:param} : ${1:type}",
-    "description": "parameter destructuring with type (TypeScript)"
   }
 }

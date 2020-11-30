@@ -26,19 +26,19 @@
     "snippets": [
       {
         "language": "javascript",
-        "path": "./snippets/hyper-js.json"
-      },
-      {
-        "language": "typescript",
-        "path": "./snippets/hyper-js.json"
+        "path": "./snippets/javascript.json"
       },
       {
         "language": "javascriptreact",
-        "path": "./snippets/hyper-js.json"
+        "path": "./snippets/javascript.json"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/typescript.json"
       },
       {
         "language": "typescriptreact",
-        "path": "./snippets/hyper-js.json"
+        "path": "./snippets/typescript.json"
       }
     ]
   },
