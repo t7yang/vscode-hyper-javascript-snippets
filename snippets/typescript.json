@@ -231,6 +231,11 @@
     "prefix": "pra",
     "body": "Promise.all(${1})${0}",
     "description": "Promise all (ES2015)"
+  },  
+  "Promise type (TypeScript)": {
+    "prefix": "prt",
+    "body": "Promise<${0}>",
+    "description": "Promise type (TypeScript)"
   },
 
   "export (ES2015)": {
@@ -375,6 +380,12 @@
     "scope": "typescript",
     "body": "enum ${1:name} {${2}}${0}",
     "description": "enum (TypeScript)"
+  },
+  "const enum (TypeScript)": {
+    "prefix": "enc",
+    "scope": "typescript",
+    "body": "const enum ${1:name} {${2}}${0}",
+    "description": "const enum (TypeScript)"
   },
   "module (TypeScript)": {
     "prefix": "mod",

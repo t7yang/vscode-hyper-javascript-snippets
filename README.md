@@ -75,6 +75,7 @@ Install from VSCode Extension Marketplace [Hyper JavaScript Snippets](https://ma
 |   `af` | arrow function (ES2015)                        | `(${1}) => ${0}`                   |
 |  `afa` | async arrow function (ES2015)                  | `async (${1}) => ${0}`             |
 | `iife` | immediately-invoked function expression (IIFE) | `(${2})(${1})${0}`                 |
+|   `pd` | parameter destructuring with type (TypeScript) | `${0:param} : ${1:type}`           |
 
 ### Iterables
 | Prefix | Desc             | Body                                 |
@@ -105,12 +106,13 @@ Install from VSCode Extension Marketplace [Hyper JavaScript Snippets](https://ma
 |  `iof` | instanceof | `${1:source} instanceof ${0:Class}` |
 
 ### Promises
-| Prefix | Desc                     | Body                        |
-| -----: | ------------------------ | --------------------------- |
-|   `pr` | Promise (ES2015)         | `new Promise(${0})`         |
-|  `prs` | Promise resolve (ES2015) | `Promise.resolve(${1})${0}` |
-|  `prj` | Promise reject (ES2015)  | `Promise.reject(${1})${0}`  |
-|  `pra` | Promise all (ES2015)     | `Promise.all(${1})${0}`     |
+| Prefix | Desc                      | Body                        |
+| -----: | ------------------------- | --------------------------- |
+|   `pr` | Promise (ES2015)          | `new Promise(${0})`         |
+|  `prs` | Promise resolve (ES2015)  | `Promise.resolve(${1})${0}` |
+|  `prj` | Promise reject (ES2015)   | `Promise.reject(${1})${0}`  |
+|  `pra` | Promise all (ES2015)      | `Promise.all(${1})${0}`     |
+|  `prt` | Promise type (TypeScript) | `Promise<${0}>`             |
 
 ### ES2015 Modules
 |  Prefix | Desc                      | Body                                          |
@@ -156,14 +158,14 @@ Install from VSCode Extension Marketplace [Hyper JavaScript Snippets](https://ma
 | -----: | ----------------------------- | --------------- |
 |   `us` | insert 'use strict' statement | `'use strict';` |
 
-### TypeScript
-| Prefix | Desc                                           | Body                             |
-| -----: | ---------------------------------------------- | -------------------------------- |
-|  `typ` | type (TypeScript)                              | `type ${1:name} = ${0}`          |
-|  `int` | interface (TypeScript)                         | `interface ${1:name} {${2}}${0}` |
-|  `enu` | enum (TypeScript)                              | `enum ${1:name} {${2}}${0}`      |
-|  `mod` | module (TypeScript)                            | `module ${1:name} {${2}}${0}`    |
-|  `nam` | namespace (TypeScript)                         | `namespace ${1:name} {${2}}${0}` |
-|   `pd` | parameter destructuring with type (TypeScript) | `${0:param} : ${1:type}`         |
+### TypeScript (Data Types)
+| Prefix | Desc                    | Body                              |
+| -----: | ----------------------- | --------------------------------- |
+|  `typ` | type (TypeScript)       | `type ${1:name} = ${0}`           |
+|  `int` | interface (TypeScript)  | `interface ${1:name} {${2}}${0}`  |
+|  `enu` | enum (TypeScript)       | `enum ${1:name} {${2}}${0}`       |
+|  `enc` | const enum (TypeScript) | `const enum ${1:name} {${2}}${0}` |
+|  `mod` | module (TypeScript)     | `module ${1:name} {${2}}${0}`     |
+|  `nam` | namespace (TypeScript)  | `namespace ${1:name} {${2}}${0}`  |
 
 > Only in `typescript` and `typescriptreact` file type.
