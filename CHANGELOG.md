@@ -2,6 +2,17 @@
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
+## [2.5.0] - 2020-11-30
+
+### Changed
+
+- TypeScript snippets is now show in TypeScript file type `typescript` and `typescriptreact` only.
+
+### Added
+
+- `prt` for create Promise type, like `Promise<T>` (TypeScript).
+- `enc` for create `const enum` (TypeScript).
+
 ## [2.4.0] - 2020-09-16
 
 ### Added

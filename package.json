@@ -1,7 +1,7 @@
 {
   "name": "hyper-javascript-snippets",
   "description": "A collection of snippets that cover JavaScript, TypeScript, and NodeJS for Visual Studio Code",
-  "version": "2.4.0",
+  "version": "2.5.0",
   "displayName": "Hyper JavaScript Snippets",
   "publisher": "t7yang",
   "icon": "images/hyper-js.png",
