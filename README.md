@@ -33,135 +33,493 @@ Install from VSCode Extension Marketplace [Hyper JavaScript Snippets](https://ma
   - Intellisense is not available on destructuring source (`cad`, `pd`, ...)
 
 ### Declarations
-| Prefix | Desc                                    | Body                     |
-| -----: | --------------------------------------- | ------------------------ |
-|   `va` | var assignment                          | `var ${1} = ${0}`        |
-|   `la` | let assignment (ES2015)                 | `let ${1} = ${0}`        |
-|   `ca` | const assignment (ES2015)               | `const ${1} = ${0}`      |
-|  `vad` | var destructuring assignment (ES2015)   | `var ${0:dest} = ${1}`   |
-|  `lad` | let destructuring assignment (ES2015)   | `let ${0:dest} = ${1}`   |
-|  `cad` | const destructuring assignment (ES2015) | `const ${0:dest} = ${1}` |
+
+`va` <kbd>⇥</kbd> var assignment
+
+```javascript
+var ${1} = ${0}
+```
+
+`la` <kbd>⇥</kbd> let assignment (ES2015)
+
+```javascript
+let ${1} = ${0}
+```
+
+`ca` <kbd>⇥</kbd> const assignment (ES2015)
+
+```javascript
+const ${1} = ${0}
+```
+
+`vad` <kbd>⇥</kbd> var destructuring assignment (ES2015)
+
+```javascript
+var ${0:dest} = ${1}
+```
+
+`lad` <kbd>⇥</kbd> let destructuring assignment (ES2015)
+
+```javascript
+let ${0:dest} = ${1}
+```
+
+`cad` <kbd>⇥</kbd> const destructuring assignment (ES2015)
+
+```javascript
+const ${0:dest} = ${1}
+```
 
 ### Conditional
-| Prefix | Desc              | Body                                                                                                                                                 |
-| -----: | ----------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
-|   `if` | if statement      | `if (${1}) ${0}`                                                                                                                                     |
-|   `el` | else statement    | `else ${0}`                                                                                                                                          |
-| `ifel` | if/else statement | `if (${1}) ${2} else ${0}`                                                                                                                           |
-| `elif` | else if statement | `else if (${1}) ${0}`                                                                                                                                |
-|  `ter` | ternary operator  | `${1} ? ${2} : ${0}`                                                                                                                                 |
-|   `sw` | switch case       | <code>switch (${1}) {<br>&nbsp;&nbsp;case ${2} :<br>&nbsp;&nbsp;&nbsp;&nbsp;$0<br>&nbsp;&nbsp;default:<br>&nbsp;&nbsp;&nbsp;&nbsp;break;<br>}</code> |
-| `case` | switch's case     | <code>case ${1} :<br>&nbsp;&nbsp;${0}</code>                                                                                                         |
+
+`if` <kbd>⇥</kbd> if statement
+
+```javascript
+if (${1}) ${0}
+```
+
+`el` <kbd>⇥</kbd> else statement
+
+```javascript
+else ${0}
+```
+
+`ifel` <kbd>⇥</kbd> if/else statement
+
+```javascript
+if (${1}) ${2} else ${0}
+```
+
+`elif` <kbd>⇥</kbd> else if statement
+
+```javascript
+else if (${1}) ${0}
+```
+
+`ter` <kbd>⇥</kbd> ternary operator
+
+```javascript
+${1} ? ${2} : ${0}
+```
+
+`sw` <kbd>⇥</kbd> switch case
+
+```javascript
+switch (${1}) {
+      case ${2} :
+        $0
+    default:
+        break;
+}
+```
+
+`case` <kbd>⇥</kbd> switch's case
+
+ ```javascript
+ case ${1} :
+       ${0}
+ ```
 
 ### Statement
-| Prefix | Desc                       | Body                                                                                                                                          |
-| -----: | -------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
-|   `fo` | for loop                   | `for (${1} ; ${2} ; ${3}) ${0}`                                                                                                               |
-|  `foi` | for in loop                | <code>for (const ${1} in ${2}) {<br>&nbsp;&nbsp;if (${2}.hasOwnProperty(${1})) {<br>&nbsp;&nbsp;&nbsp;&nbsp;${0}<br>&nbsp;&nbsp;}<br>}</code> |
-|  `fof` | for of loop (ES2015)       | `for (const ${1} of ${2}) ${0}`                                                                                                               |
-|  `foa` | for await of loop (ES2018) | `for await (const ${1} of ${2}) ${0}`                                                                                                         |
-|   `wh` | while loop                 | `while (${1}) ${0}`                                                                                                                           |
-|   `tc` | try/catch                  | `try {${1}} catch ${2} {${0}}`                                                                                                                |
-|   `tf` | try/finally                | `try {${1}} finally {${0}}`                                                                                                                   |
-|  `tcf` | try/catch/finally          | `try {${1}} catch ${2} {${3}} finally {${0}}`                                                                                                 |
+
+`fo` <kbd>⇥</kbd> for loop
+
+```javascript
+for (${1} ; ${2} ; ${3}) ${0}
+```
+
+`foi` <kbd>⇥</kbd> for in loop
+
+ ```javascript
+ for (const ${1} in ${2}) {
+       if (${2}.hasOwnProperty(${1})) {
+           ${0}
+     }
+ }
+ ```
+
+`fof` <kbd>⇥</kbd> for of loop (ES2015)
+
+```javascript
+for (const ${1} of ${2}) ${0}
+```
+
+`foa` <kbd>⇥</kbd> for await of loop (ES2018)
+
+```javascript
+for await (const ${1} of ${2}) ${0}
+```
+
+`wh` <kbd>⇥</kbd> while loop
+
+```javascript
+while (${1}) ${0}
+```
+
+`tc` <kbd>⇥</kbd> try/catch
+
+```javascript
+try {${1}} catch ${2} {${0}}
+```
+
+`tf` <kbd>⇥</kbd> try/finally
+
+```javascript
+try {${1}} finally {${0}}
+```
+
+`tcf` <kbd>⇥</kbd> try/catch/finally
+
+```javascript
+try {${1}} catch ${2} {${3}} finally {${0}}
+```
 
 ### Functions
-| Prefix | Desc                                           | Body                               |
-| -----: | ---------------------------------------------- | ---------------------------------- |
-|    `f` | anonymous function                             | `function(${1}) {${0}}`            |
-|   `fn` | named function                                 | `function ${1}(${2}) {${0}}`       |
-|   `fa` | async anonymous function                       | `async function (${1}) {${0}}`     |
-|  `fna` | async named function                           | `async function ${1}(${2}) {${0}}` |
-|   `af` | arrow function (ES2015)                        | `(${1}) => ${0}`                   |
-|  `afa` | async arrow function (ES2015)                  | `async (${1}) => ${0}`             |
-| `iife` | immediately-invoked function expression (IIFE) | `(${2})(${1})${0}`                 |
+
+`f` <kbd>⇥</kbd> anonymous function
+
+```javascript
+function(${1}) {${0}}
+```
+
+`fn` <kbd>⇥</kbd> named function
+
+```javascript
+function ${1}(${2}) {${0}}
+```
+
+`fa` <kbd>⇥</kbd> async anonymous function
+
+```javascript
+async function (${1}) {${0}}
+```
+
+`fna` <kbd>⇥</kbd> async named function
+
+```javascript
+async function ${1}(${2}) {${0}}
+```
+
+`af` <kbd>⇥</kbd> arrow function (ES2015)
+
+```javascript
+(${1}) => ${0}
+```
+
+`afa` <kbd>⇥</kbd> async arrow function (ES2015)
+
+```javascript
+async (${1}) => ${0}
+```
+
+`iife` <kbd>⇥</kbd> immediately-invoked function expression (IIFE)
+
+```javascript
+(${2})(${1})${0}
+```
 
 ### Iterables
-| Prefix | Desc             | Body                                 |
-| -----: | ---------------- | ------------------------------------ |
-|  `seq` | sequence of 0..n | `[...Array(${1:length}).keys()]${0}` |
+
+`seq` <kbd>⇥</kbd> sequence of 0..n
+
+```javascript
+[...Array(${1:length}).keys()]${0}
+```
 
 ### Objects
-| Prefix | Desc           | Body             |
-| -----: | -------------- | ---------------- |
-|   `ol` | object literal | `{ ${1}: ${0} }` |
+
+`ol` <kbd>⇥</kbd> object literal
+
+```javascript
+{ ${1}: ${0} }
+```
 
 ### Classes
-| Prefix | Desc                       | Body                                                                            |
-| -----: | -------------------------- | ------------------------------------------------------------------------------- |
-|   `cs` | class (ES2015)             | <code>class ${1:name} {<br>&nbsp;&nbsp;${0}<br>}</code>                         |
-|  `cse` | class extends (ES2015)     | <code>class ${1:name} extends ${2:base} {<br>&nbsp;&nbsp;${0}<br>}</code>       |
-| `ctor` | class constructor (ES2015) | `constructor(${1}) {${0}}`                                                      |
-|  `csm` | method (ES2015)            | `${1:name}(${2}) {${0}}`                                                        |
-| `csma` | async method (ES2015)      | `async ${1:name}(${2}) {${0}}`                                                  |
-| `gter` | getter (ES2015)            | `get ${1:property}() {${0}}`                                                    |
-| `ster` | setter (ES2015)            | `set ${1:property}(${2:value}) {${0}}`                                          |
-|   `gs` | getter and setter (ES2015) | <code>get ${1:property}() {${0}}<br><br>set ${1:property}(${2:value}) {}</code> |
+
+`cs` <kbd>⇥</kbd> class (ES2015)
+
+ ```javascript
+ class ${1:name} {
+       ${0}
+ }
+ ```
+
+`cse` <kbd>⇥</kbd> class extends (ES2015)
+
+ ```javascript
+ class ${1:name} extends ${2:base} {
+       ${0}
+ }
+ ```
+
+`ctor` <kbd>⇥</kbd> class constructor (ES2015)
+
+```javascript
+constructor(${1}) {${0}}
+```
+
+`csm` <kbd>⇥</kbd> method (ES2015)
+
+```javascript
+${1:name}(${2}) {${0}}
+```
+
+`csma` <kbd>⇥</kbd> async method (ES2015)
+
+```javascript
+async ${1:name}(${2}) {${0}}
+```
+
+`gter` <kbd>⇥</kbd> getter (ES2015)
+
+```javascript
+get ${1:property}() {${0}}
+```
+
+`ster` <kbd>⇥</kbd> setter (ES2015)
+
+```javascript
+set ${1:property}(${2:value}) {${0}}
+```
+
+`gs` <kbd>⇥</kbd> getter and setter (ES2015)
+
+ ```javascript
+ get ${1:property}() {${0}}
+
+ set ${1:property}(${2:value}) {}
+ ```
 
 ### Types
-| Prefix | Desc       | Body                                |
-| -----: | ---------- | ----------------------------------- |
-|  `tof` | typeof     | `typeof ${1:source} === ${0}`       |
-|  `iof` | instanceof | `${1:source} instanceof ${0:Class}` |
+
+`tof` <kbd>⇥</kbd> typeof
+
+```javascript
+typeof ${1:source} === ${0}
+```
+
+`iof` <kbd>⇥</kbd> instanceof
+
+```javascript
+${1:source} instanceof ${0:Class}
+```
 
 ### Promises
-| Prefix | Desc                     | Body                        |
-| -----: | ------------------------ | --------------------------- |
-|   `pr` | Promise (ES2015)         | `new Promise(${0})`         |
-|  `prs` | Promise resolve (ES2015) | `Promise.resolve(${1})${0}` |
-|  `prj` | Promise reject (ES2015)  | `Promise.reject(${1})${0}`  |
-|  `pra` | Promise all (ES2015)     | `Promise.all(${1})${0}`     |
+
+`pr` <kbd>⇥</kbd> Promise (ES2015)
+
+```javascript
+new Promise(${0})
+```
+
+`prs` <kbd>⇥</kbd> Promise resolve (ES2015)
+
+```javascript
+Promise.resolve(${1})${0}
+```
+
+`prj` <kbd>⇥</kbd> Promise reject (ES2015)
+
+```javascript
+Promise.reject(${1})${0}
+```
+
+`pra` <kbd>⇥</kbd> Promise all (ES2015)
+
+```javascript
+Promise.all(${1})${0}
+```
 
 ### ES2015 Modules
-|  Prefix | Desc                      | Body                                          |
-| ------: | ------------------------- | --------------------------------------------- |
-|   `exp` | export (ES2015)           | `export ${0}`                                 |
-|  `expd` | export default (ES2015)   | `export default ${0}`                         |
-| `expas` | export as (ES2015)        | `export { ${1} as ${2} };${0}`                |
-|  `expf` | export from (ES2015)      | `export ${2:name} from '${1}';${0}`           |
-| `expaf` | export all from (ES2015)  | `export *${2} from '${1}';${0}`               |
-|   `imp` | import module (ES2015)    | `import ${2:name} from '${1}';${0}`           |
-|  `impf` | import file (ES2015)      | `import '${1}';${0}`                          |
-| `impas` | import module as (ES2015) | `import ${2:*} as ${3:name} from '${1}';${0}` |
+
+`exp` <kbd>⇥</kbd> export (ES2015)
+
+```javascript
+export ${0}
+```
+
+`expd` <kbd>⇥</kbd> export default (ES2015)
+
+```javascript
+export default ${0}
+```
+
+`expas` <kbd>⇥</kbd> export as (ES2015)
+
+```javascript
+export { ${1} as ${2} };${0}
+```
+
+`expf` <kbd>⇥</kbd> export from (ES2015)
+
+```javascript
+export ${2:name} from '${1}';${0}
+```
+
+`expaf` <kbd>⇥</kbd> export all from (ES2015)
+
+```javascript
+export *${2} from '${1}';${0}
+```
+
+`imp` <kbd>⇥</kbd> import module (ES2015)
+
+```javascript
+import ${2:name} from '${1}';${0}
+```
+
+`impf` <kbd>⇥</kbd> import file (ES2015)
+
+```javascript
+import '${1}';${0}
+```
+
+`impas` <kbd>⇥</kbd> import module as (ES2015)
+
+```javascript
+import ${2:*} as ${3:name} from '${1}';${0}
+```
 
 ### Node.js
-|    Prefix | Desc                   | Body                                     |
-| --------: | ---------------------- | ---------------------------------------- |
-|      `cb` | Node.js style callback | `(err, ${1:response}) => {${0}}`         |
-| `require` | require                | `require(${1:path})${0}`                 |
-|     `req` | require assignment     | `const ${2:name} = require('${1}');${0}` |
-|      `em` | exports.member         | `exports.${1} = ${2};${0}`               |
-|      `me` | module.exports         | `module.exports = ${1}${0}`              |
-|      `on` | event handler          | `on('${1:event}', ${2:callback});${0}`   |
+
+`cb` <kbd>⇥</kbd> Node.js style callback
+
+```javascript
+(err, ${1:response}) => {${0}}
+```
+
+`require` <kbd>⇥</kbd> require
+
+```javascript
+require(${1:path})${0}
+```
+
+`req` <kbd>⇥</kbd> require assignment
+
+```javascript
+const ${2:name} = require('${1}');${0}
+```
+
+`em` <kbd>⇥</kbd> exports.member
+
+```javascript
+exports.${1} = ${2};${0}
+```
+
+`me` <kbd>⇥</kbd> module.exports
+
+```javascript
+module.exports = ${1}${0}
+```
+
+`on` <kbd>⇥</kbd> event handler
+
+```javascript
+on('${1:event}', ${2:callback});${0}
+```
 
 ### Console
-| Prefix | Desc          | Body                                                                   |
-| -----: | ------------- | ---------------------------------------------------------------------- |
-|   `cl` | console.log   | `console.log(${1})${0}`                                                |
-|   `ce` | console.error | `console.error(${1})${0}`                                              |
-|   `cw` | console.warn  | `console.warn(${1})${0}`                                               |
-|   `cd` | console.dir   | `console.dir(${1})${0}`                                                |
-|   `ct` | console.time  | <code>console.time('${1}') <br>${0}<br> console.timeEnd('${1}')</code> |
+
+`cl` <kbd>⇥</kbd> console.log
+
+```javascript
+console.log(${1})${0}
+```
+
+`ce` <kbd>⇥</kbd> console.error
+
+```javascript
+console.error(${1})${0}
+```
+
+`cw` <kbd>⇥</kbd> console.warn
+
+```javascript
+console.warn(${1})${0}
+```
+
+`cd` <kbd>⇥</kbd> console.dir
+
+```javascript
+console.dir(${1})${0}
+```
+
+`ct` <kbd>⇥</kbd> console.time
+
+ ```javascript
+ console.time('${1}')
+ ${0}
+  console.timeEnd('${1}')
+ ```
 
 ### Timers
-|  Prefix | Desc                       | Body                                         |
-| ------: | -------------------------- | -------------------------------------------- |
-|  `sett` | setTimeout                 | `setTimeout(${2:callback}, ${1:delay})${0}`  |
-| `setin` | setInterval                | `setInterval(${2:callback}, ${1:delay})${0}` |
-| `setim` | setImmediate (node.js)     | `setImmediate(${1:callback}${2})${0}`        |
-|    `nt` | process nextTick (node.js) | `process.nextTick(${1});${0}`                |
+
+`sett` <kbd>⇥</kbd> setTimeout
+
+```javascript
+setTimeout(${2:callback}, ${1:delay})${0}
+```
+
+`setin` <kbd>⇥</kbd> setInterval
+
+```javascript
+setInterval(${2:callback}, ${1:delay})${0}
+```
+
+`setim` <kbd>⇥</kbd> setImmediate (node.js)
+
+```javascript
+setImmediate(${1:callback}${2})${0}
+```
+
+`nt` <kbd>⇥</kbd> process nextTick (node.js)
+
+```javascript
+process.nextTick(${1});${0}
+```
 
 ### Miscellaneous
-| Prefix | Desc                          | Body            |
-| -----: | ----------------------------- | --------------- |
-|   `us` | insert 'use strict' statement | `'use strict';` |
+
+`us` <kbd>⇥</kbd> insert 'use strict' statement
+
+```javascript
+'use strict';
+```
 
 ### TypeScript
-| Prefix | Desc                                           | Body                             |
-| -----: | ---------------------------------------------- | -------------------------------- |
-|  `typ` | type (TypeScript)                              | `type ${1:name} = ${0}`          |
-|  `int` | interface (TypeScript)                         | `interface ${1:name} {${2}}${0}` |
-|  `enu` | enum (TypeScript)                              | `enum ${1:name} {${2}}${0}`      |
-|  `mod` | module (TypeScript)                            | `module ${1:name} {${2}}${0}`    |
-|  `nam` | namespace (TypeScript)                         | `namespace ${1:name} {${2}}${0}` |
-|   `pd` | parameter destructuring with type (TypeScript) | `${0:param} : ${1:type}`         |
+
+`typ` <kbd>⇥</kbd> type (TypeScript)
+
+```javascript
+type ${1:name} = ${0}
+```
+
+`int` <kbd>⇥</kbd> interface (TypeScript)
+
+```javascript
+interface ${1:name} {${2}}${0}
+```
+
+`enu` <kbd>⇥</kbd> enum (TypeScript)
+
+```javascript
+enum ${1:name} {${2}}${0}
+```
+
+`mod` <kbd>⇥</kbd> module (TypeScript)
+
+```javascript
+module ${1:name} {${2}}${0}
+```
+
+`nam` <kbd>⇥</kbd> namespace (TypeScript)
+
+```javascript
+namespace ${1:name} {${2}}${0}
+```
+
+`pd` <kbd>⇥</kbd> parameter destructuring with type (TypeScript)
+
+```javascript
+${0:param} : ${1:type}
+```
