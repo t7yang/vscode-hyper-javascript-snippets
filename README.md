@@ -11,7 +11,7 @@ Install from VSCode Extension Marketplace [Hyper JavaScript Snippets](https://ma
 
 ## What's the difference
 1. Cursor to the end - more easy to go next and let developer decide ending semicolon.
-2. No semicolon - for point-free friendly, except some snippets than surely end up with a semicolon. (👎 Standard JS Style)
+2. No semicolon - for point-free friendly, except some snippets than surely end up with a semicolon. (Standard JS Style 👍)
 3. No newline - except few "big structure" snippets (like for loop).
 4. No placeholder - except something break without a placeholder (like import module).
 
