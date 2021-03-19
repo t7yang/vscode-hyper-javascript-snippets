@@ -1,402 +1,326 @@
 {
   "var assignment": {
     "prefix": "va",
-    "body": "var ${1} = ${0}",
-    "description": "var assignment"
+    "body": "var ${1} = ${0}"
   },
-  "let assignment": {
+  "let assignment (ES2015)": {
     "prefix": "la",
-    "body": "let ${1} = ${0}",
-    "description": "let assignment (ES2015)"
+    "body": "let ${1} = ${0}"
   },
-  "const assignment": {
+  "const assignment (ES2015)": {
     "prefix": "ca",
-    "body": "const ${1} = ${0}",
-    "description": "const assignment (ES2015)"
+    "body": "const ${1} = ${0}"
   },
-  "var destructuring assignment": {
+  "var destructuring assignment (ES2015)": {
     "prefix": "vad",
-    "body": "var ${0:dest} = ${1}",
-    "description": "var destructuring assignment (ES2015)"
+    "body": "var ${0:dest} = ${1}"
   },
-  "let destructuring assignment": {
+  "let destructuring assignment (ES2015)": {
     "prefix": "lad",
-    "body": "let ${0:dest} = ${1}",
-    "description": "let destructuring assignment (ES2015)"
+    "body": "let ${0:dest} = ${1}"
   },
-  "const destructuring assignment": {
+  "const destructuring assignment (ES2015)": {
     "prefix": "cad",
-    "body": "const ${0:dest} = ${1}",
-    "description": "const destructuring assignment (ES2015)"
+    "body": "const ${0:dest} = ${1}"
   },
 
   "if statement": {
     "prefix": "if",
-    "body": "if (${1}) ${0}",
-    "description": "if statement"
+    "body": "if (${1}) ${0}"
   },
   "else statement": {
     "prefix": "el",
-    "body": "else ${0}",
-    "description": "else statement"
+    "body": "else ${0}"
   },
   "if/else statement": {
     "prefix": "ifel",
-    "body": "if (${1}) ${2} else ${0}",
-    "description": "if/else statement"
+    "body": "if (${1}) ${2} else ${0}"
   },
   "else if statement": {
     "prefix": "elif",
-    "body": "else if (${1}) ${0}",
-    "description": "else if statement"
+    "body": "else if (${1}) ${0}"
   },
   "ternary operator": {
     "prefix": "ter",
-    "body": "${1} ? ${2} : ${0}",
-    "description": "ternary operator"
+    "body": "${1} ? ${2} : ${0}"
   },
   "switch case": {
     "prefix": "sw",
-    "body": "switch (${1}) {\n\tcase ${2} :\n\t\t$0\n\tdefault:\n\t\tbreak;\n}",
-    "description": "switch case"
+    "body": "switch (${1}) {\n\tcase ${2} :\n\t\t$0\n\tdefault:\n\t\tbreak;\n}"
   },
   "case": {
     "prefix": "case",
-    "body": "case ${1} :\n\t${0}",
-    "description": "switch's case"
+    "body": "case ${1} :\n\t${0}"
   },
 
   "for loop": {
     "prefix": "fo",
-    "body": "for (${1} ; ${2} ; ${3}) ${0}",
-    "description": "for loop"
+    "body": "for (${1} ; ${2} ; ${3}) ${0}"
   },
   "for in loop": {
     "prefix": "foi",
-    "body": "for (const ${1} in ${2}) {\n\tif (${2}.hasOwnProperty(${1})) {\n\t\t${0}\n\t}\n}",
-    "description": "for in loop"
+    "body": "for (const ${1} in ${2}) {\n\tif (${2}.hasOwnProperty(${1})) {\n\t\t${0}\n\t}\n}"
   },
   "for of loop (ES2015)": {
     "prefix": "fof",
-    "body": "for (const ${1} of ${2}) ${0}",
-    "description": "for of loop (ES2015)"
+    "body": "for (const ${1} of ${2}) ${0}"
   },
   "for await of loop (ES2018)": {
     "prefix": "foa",
-    "body": "for await (const ${1} of ${2}) ${0}",
-    "description": "for await of loop (ES2018)"
+    "body": "for await (const ${1} of ${2}) ${0}"
   },
   "while loop": {
     "prefix": "wh",
-    "body": "while (${1}) ${0}",
-    "description": "while loop"
+    "body": "while (${1}) ${0}"
   },
   "try/catch": {
     "prefix": "tc",
-    "body": "try {${1}} catch ${2} {${0}}",
-    "description": "try/catch"
+    "body": "try {${1}} catch ${2} {${0}}"
   },
   "try/finally": {
     "prefix": "tf",
-    "body": "try {${1}} finally {${0}}",
-    "description": "try/finally"
+    "body": "try {${1}} finally {${0}}"
   },
   "try/catch/finally": {
     "prefix": "tcf",
-    "body": "try {${1}} catch ${2} {${3}} finally {${0}}",
-    "description": "try/catch/finally"
+    "body": "try {${1}} catch ${2} {${3}} finally {${0}}"
   },
 
   "anonymous function": {
     "prefix": "f",
-    "body": "function(${1}) {${0}}",
-    "description": "anonymous function"
+    "body": "function(${1}) {${0}}"
   },
   "named function": {
     "prefix": "fn",
-    "body": "function ${1}(${2}) {${0}}",
-    "description": "named function"
+    "body": "function ${1}(${2}) {${0}}"
   },
   "async anonymous function": {
     "prefix": "fa",
-    "body": "async function (${1}) {${0}}",
-    "description": "async anonymous function"
+    "body": "async function (${1}) {${0}}"
   },
   "async named function": {
     "prefix": "fna",
-    "body": "async function ${1}(${2}) {${0}}",
-    "description": "async named function"
+    "body": "async function ${1}(${2}) {${0}}"
   },
   "arrow function (ES2015)": {
     "prefix": "af",
-    "body": "(${1}) => ${0}",
-    "description": "arrow function (ES2015)"
+    "body": "(${1}) => ${0}"
   },
   "async arrow function (ES2015)": {
     "prefix": "afa",
-    "body": "async (${1}) => ${0}",
-    "description": "async arrow function (ES2015)"
+    "body": "async (${1}) => ${0}"
   },
   "immediately-invoked function expression (IIFE)": {
     "prefix": "iife",
-    "body": "(${2})(${1})${0}",
-    "description": "immediately-invoked function expression (IIFE)"
+    "body": "(${2})(${1})${0}"
   },
   "parameter destructuring with type (TypeScript)": {
     "prefix": "pd",
-    "body": "${0:param} : ${1:type}",
-    "description": "parameter destructuring with type (TypeScript)"
+    "body": "${0:param} : ${1:type}"
   },
 
   "sequence of 0..n": {
     "prefix": "seq",
-    "body": "[...Array(${1:length}).keys()]${0}",
-    "description": "sequence of 0..n"
+    "body": "[...Array(${1:length}).keys()]${0}"
   },
 
   "object literal": {
     "prefix": "ol",
-    "body": "{ ${1}: ${0} }",
-    "description": "object literal"
+    "body": "{ ${1}: ${0} }"
   },
 
   "class (ES2015)": {
     "prefix": "cs",
-    "body": "class ${1} {\n\t${0}\n}",
-    "description": "class (ES2015)"
+    "body": "class ${1} {\n\t${0}\n}"
   },
   "class extends (ES2015)": {
     "prefix": "cse",
-    "body": "class ${1} extends ${2:base} {\n\t${0}\n}",
-    "description": "class extends (ES2015)"
+    "body": "class ${1} extends ${2:base} {\n\t${0}\n}"
   },
   "class constructor (ES2015)": {
     "prefix": "ctor",
-    "body": "constructor(${1}) {${0}}",
-    "description": "class constructor (ES2015)"
+    "body": "constructor(${1}) {${0}}"
   },
   "method (ES2015)": {
     "prefix": "csm",
-    "body": "${1:name}(${2}) {${0}}",
-    "description": "method (ES2015)"
+    "body": "${1:name}(${2}) {${0}}"
   },
   "async method (ES2015)": {
     "prefix": "csma",
-    "body": "async ${1:name}(${2}) {${0}}",
-    "description": "async method (ES2015)"
+    "body": "async ${1:name}(${2}) {${0}}"
   },
   "getter (ES2015)": {
     "prefix": "gter",
-    "body": "get ${1:property}() {${0}}",
-    "description": "getter (ES2015)"
+    "body": "get ${1:property}() {${0}}"
   },
   "setter (ES2015)": {
     "prefix": "ster",
-    "body": "set ${1:property}(${2:value}) {${0}}",
-    "description": "setter (ES2015)"
+    "body": "set ${1:property}(${2:value}) {${0}}"
   },
   "getter and setter (ES2015)": {
     "prefix": "gs",
-    "body": "get ${1:property}() {${0}}\n\nset ${1:property}(${2:value}) {}",
-    "description": "getter and setter (ES2015)"
+    "body": "get ${1:property}() {${0}}\n\nset ${1:property}(${2:value}) {}"
   },
 
   "typeof": {
     "prefix": "tof",
-    "body": "typeof ${1:source} === ${0}",
-    "description": "typeof"
+    "body": "typeof ${1:source} === ${0}"
   },
   "instanceof": {
     "prefix": "iof",
-    "body": "${1:source} instanceof ${0:Class}",
-    "description": "instanceof"
+    "body": "${1:source} instanceof ${0:Class}"
   },
 
   "Promise new (ES2015)": {
     "prefix": "pr",
-    "body": "new Promise(${0})",
-    "description": "Promise new (ES2015)"
+    "body": "new Promise(${0})"
   },
   "Promise resolve (ES2015)": {
     "prefix": "prs",
-    "body": "Promise.resolve(${1})${0}",
-    "description": "Promise resolve (ES2015)"
+    "body": "Promise.resolve(${1})${0}"
   },
   "Promise reject (ES2015)": {
     "prefix": "prj",
-    "body": "Promise.reject(${1})${0}",
-    "description": "Promise reject (ES2015)"
+    "body": "Promise.reject(${1})${0}"
   },
   "Promise all (ES2015)": {
     "prefix": "pra",
-    "body": "Promise.all(${1})${0}",
-    "description": "Promise all (ES2015)"
+    "body": "Promise.all(${1})${0}"
   },  
   "Promise type (TypeScript)": {
     "prefix": "prt",
-    "body": "Promise<${0}>",
-    "description": "Promise type (TypeScript)"
+    "body": "Promise<${0}>"
   },
 
   "export (ES2015)": {
     "prefix": "exp",
-    "body": "export ${0}",
-    "description": "export (ES2015)"
+    "body": "export ${0}"
   },
   "export default (ES2015)": {
     "prefix": "expd",
-    "body": "export default ${0}",
-    "description": "export default (ES2015)"
+    "body": "export default ${0}"
   },
   "export as (ES2015)": {
     "prefix": "expas",
-    "body": "export ${1} as ${2};${0}",
-    "description": "export as (ES2015)"
+    "body": "export ${1} as ${2};${0}"
   },
   "export from (ES2015)": {
     "prefix": "expf",
-    "body": "export ${2:name} from '${1}';${0}",
-    "description": "export from (ES2015)"
+    "body": "export ${2:name} from '${1}';${0}"
   },
   "export all from (ES2015)": {
     "prefix": "expaf",
-    "body": "export *${2} from '${1}';${0}",
-    "description": "export all from (ES2015)"
+    "body": "export *${2} from '${1}';${0}"
   },
   "import module (ES2015)": {
     "prefix": "imp",
-    "body": "import ${2:name} from '${1}';${0}",
-    "description": "import module (ES2015)"
+    "body": "import ${2:name} from '${1}';${0}"
   },
   "import file (ES2015)": {
     "prefix": "impf",
-    "body": "import '${1}';${0}",
-    "description": "import file (ES2015)"
+    "body": "import '${1}';${0}"
   },
   "import module as (ES2015)": {
     "prefix": "impas",
-    "body": "import ${2:*} as ${3:name} from '${1}';${0}",
-    "description": "import module as (ES2015)"
+    "body": "import ${2:*} as ${3:name} from '${1}';${0}"
   },
 
   "Node.js style callback": {
     "prefix": "cb",
-    "body": "(err, ${1:response}) => {${0}}",
-    "description": "Node.js style callback"
+    "body": "(err, ${1:response}) => {${0}}"
   },
-  "require": {
+  "require (Node.JS)": {
     "prefix": "require",
-    "body": "require(${1:path})${0}",
-    "description": "require"
+    "body": "require(${1:path})${0}"
   },
-  "require assignment": {
+  "require assignment (Node.JS)": {
     "prefix": "req",
-    "body": "const ${2:name} = require('${1}');${0}",
-    "description": "require assignment"
+    "body": "const ${2:name} = require('${1}');${0}"
   },
-  "exports.member": {
+  "exports.member (Node.JS)": {
     "prefix": "em",
-    "body": "exports.${1} = ${2};${0}",
-    "description": "exports.member"
+    "body": "exports.${1} = ${2};${0}"
   },
-  "module.exports": {
+  "module.exports (Node.JS)": {
     "prefix": "me",
-    "body": "module.exports = ${1}${0}",
-    "description": "module.exports"
+    "body": "module.exports = ${1}${0}"
   },
   "event handler": {
     "prefix": "on",
-    "body": "on('${1:event}', ${2:callback});${0}",
-    "description": "event handler"
+    "body": "on('${1:event}', ${2:callback});${0}"
   },
 
   "console.log": {
     "prefix": "cl",
-    "body": "console.log(${1})${0}",
-    "description": "console.log"
+    "body": "console.log(${1})${0}"
   },
   "console.error": {
     "prefix": "ce",
-    "body": "console.error(${1})${0}",
-    "description": "console.error"
+    "body": "console.error(${1})${0}"
   },
   "console.warn": {
     "prefix": "cw",
-    "body": "console.warn(${1})${0}",
-    "description": "console.warn"
+    "body": "console.warn(${1})${0}"
   },
   "console.dir": {
     "prefix": "cd",
-    "body": "console.dir(${1})${0}",
-    "description": "console.dir"
+    "body": "console.dir(${1})${0}"
   },
   "console.time": {
     "prefix": "ct",
-    "body": "console.time('${1}')\n${0}\nconsole.timeEnd('${1}')",
-    "description": "console.time"
+    "body": "console.time('${1}')\n${0}\nconsole.timeEnd('${1}')"
   },
 
   "setTimeout": {
     "prefix": "sett",
-    "body": "setTimeout(${2:callback}, ${1:delay})${0}",
-    "description": "setTimeout"
+    "body": "setTimeout(${2:callback}, ${1:delay})${0}"
   },
   "setInterval": {
     "prefix": "setin",
-    "body": "setInterval(${2:callback}, ${1:delay})${0}",
-    "description": "setInterval"
+    "body": "setInterval(${2:callback}, ${1:delay})${0}"
   },
   "setImmediate": {
     "prefix": "setim",
-    "body": "setImmediate(${1:callback}${2})${0}",
-    "description": "setImmediate (Node.JS)"
+    "body": "setImmediate(${1:callback}${2})${0}"
   },
   "process nextTick": {
     "prefix": "nt",
-    "body": "process.nextTick(${1});${0}",
-    "description": "process nextTick (Node.JS)"
+    "body": "process.nextTick(${1});${0}"
   },
 
   "insert 'use strict' statement": {
     "prefix": "us",
-    "body": "'use strict';",
-    "description": "insert 'use strict' statement"
+    "body": "'use strict';"
   },
 
   "type (TypeScript)": {
     "prefix": "typ",
     "scope": "typescript",
-    "body": "type ${1:name} = ${0}",
-    "description": "type (TypeScript)"
+    "body": "type ${1:name} = ${0}"
   },
   "interface (TypeScript)": {
     "prefix": "int",
     "scope": "typescript",
-    "body": "interface ${1:name} {${2}}${0}",
-    "description": "interface (TypeScript)"
+    "body": "interface ${1:name} {${2}}${0}"
   },
   "enum (TypeScript)": {
     "prefix": "enu",
     "scope": "typescript",
-    "body": "enum ${1:name} {${2}}${0}",
-    "description": "enum (TypeScript)"
+    "body": "enum ${1:name} {${2}}${0}"
   },
   "const enum (TypeScript)": {
     "prefix": "enc",
     "scope": "typescript",
-    "body": "const enum ${1:name} {${2}}${0}",
-    "description": "const enum (TypeScript)"
+    "body": "const enum ${1:name} {${2}}${0}"
   },
   "module (TypeScript)": {
     "prefix": "mod",
     "scope": "typescript",
-    "body": "module ${1:name} {${2}}${0}",
-    "description": "module (TypeScript)"
+    "body": "module ${1:name} {${2}}${0}"
   },
   "namespace (TypeScript)": {
     "prefix": "nam",
     "scope": "typescript",
-    "body": "namespace ${1:name} {${2}}${0}",
-    "description": "namespace (TypeScript)"
+    "body": "namespace ${1:name} {${2}}${0}"
   }
 }
