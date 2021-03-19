@@ -64,16 +64,14 @@ Install from VSCode Extension Marketplace [Hyper JavaScript Snippets](https://ma
 |  `tcf` | try/catch/finally          | `try {${1}} catch ${2} {${3}} finally {${0}}`                                                                                                 |
 
 ### Functions
-| Prefix | Desc                                           | Body                               |
-| -----: | ---------------------------------------------- | ---------------------------------- |
-|    `f` | anonymous function                             | `function(${1}) {${0}}`            |
-|   `fn` | named function                                 | `function ${1}(${2}) {${0}}`       |
-|   `fa` | async anonymous function                       | `async function (${1}) {${0}}`     |
-|  `fna` | async named function                           | `async function ${1}(${2}) {${0}}` |
-|   `af` | arrow function (ES2015)                        | `(${1}) => ${0}`                   |
-|  `afa` | async arrow function (ES2015)                  | `async (${1}) => ${0}`             |
-| `iife` | immediately-invoked function expression (IIFE) | `(${2})(${1})${0}`                 |
-|   `pd` | parameter destructuring with type (TypeScript) | `${0:param} : ${1:type}`           |
+| Prefix | Desc                                           | Body                         |
+| -----: | ---------------------------------------------- | ---------------------------- |
+|    `f` | function                                       | `function ${1} {${0}}`       |
+|   `fa` | async function                                 | `async function ${1} {${0}}` |
+|   `af` | arrow function (ES2015)                        | `${1} => ${0}`               |
+|  `afa` | async arrow function (ES2015)                  | `async ${1} => ${0}`         |
+| `iife` | immediately-invoked function expression (IIFE) | `(${2})(${1})${0}`           |
+|   `pd` | parameter destructuring with type (TypeScript) | `${0:param} : ${1:type}`     |
 
 ### Iterables
 | Prefix | Desc             | Body                                 |

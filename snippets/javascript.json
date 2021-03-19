@@ -86,29 +86,21 @@
     "body": "try {${1}} catch ${2} {${3}} finally {${0}}"
   },
 
-  "anonymous function": {
-    "prefix": "f",
-    "body": "function (${1}) {${0}}"
-  },
   "function": {
-    "prefix": "fn",
-    "body": "function ${1}(${2}) {${0}}"
-  },
-  "async anonymous function": {
-    "prefix": "fa",
-    "body": "async function (${1}) {${0}}"
+    "prefix": "f",
+    "body": "function ${1} {${0}}"
   },
   "async function": {
-    "prefix": "fna",
-    "body": "async function ${1}(${2}) {${0}}"
+    "prefix": "fa",
+    "body": "async function ${1} {${0}}"
   },
   "arrow function (ES2015)": {
     "prefix": "af",
-    "body": "(${1}) => ${0}"
+    "body": "${1} => ${0}"
   },
   "async arrow function (ES2015)": {
     "prefix": "afa",
-    "body": "async (${1}) => ${0}"
+    "body": "async ${1} => ${0}"
   },
   "immediately-invoked function expression (IIFE)": {
     "prefix": "iife",
