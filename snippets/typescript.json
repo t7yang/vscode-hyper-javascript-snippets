@@ -90,7 +90,7 @@
     "prefix": "f",
     "body": "function(${1}) {${0}}"
   },
-  "named function": {
+  "function": {
     "prefix": "fn",
     "body": "function ${1}(${2}) {${0}}"
   },
@@ -98,7 +98,7 @@
     "prefix": "fa",
     "body": "async function (${1}) {${0}}"
   },
-  "async named function": {
+  "async function": {
     "prefix": "fna",
     "body": "async function ${1}(${2}) {${0}}"
   },
