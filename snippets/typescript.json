@@ -179,6 +179,14 @@
     "prefix": "pra",
     "body": "Promise.all(${1})${0}"
   },  
+  "Promise all settled (ES2020)": {
+    "prefix": "pras",
+    "body": "Promise.allSettled(${1})${0}"
+  },
+  "Promise any (ES2021)": {
+    "prefix": "pran",
+    "body": "Promise.any(${1})${0}"
+  },
   "Promise type (TypeScript)": {
     "prefix": "prt",
     "body": "Promise<${0}>"
