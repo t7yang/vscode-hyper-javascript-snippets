@@ -46,11 +46,11 @@
   },
   "switch case": {
     "prefix": "sw",
-    "body": "switch (${1}) {\n\tcase ${2} :\n\t\t$0\n\tdefault:\n\t\tbreak;\n}"
+    "body": "switch (${1}) {\n\tcase ${2} : $0\n\tdefault: ${0}\n}"
   },
   "case": {
-    "prefix": "case",
-    "body": "case ${1} :\n\t${0}"
+    "prefix": "cas",
+    "body": "case ${1} : ${0}"
   },
 
   "for loop": {
@@ -134,7 +134,7 @@
     "body": "class ${1} extends ${2:base} {\n\t${0}\n}"
   },
   "class constructor (ES2015)": {
-    "prefix": "ctor",
+    "prefix": "cst",
     "body": "constructor(${1}) {${0}}"
   },
   "method (ES2015)": {
@@ -222,7 +222,7 @@
     "body": "(err, ${1:response}) => {${0}}"
   },
   "require (Node.JS)": {
-    "prefix": "require",
+    "prefix": "re",
     "body": "require(${1:path})${0}"
   },
   "require assignment (Node.JS)": {

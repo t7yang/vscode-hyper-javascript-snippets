@@ -41,15 +41,15 @@ Install from VSCode Extension Marketplace [Hyper JavaScript Snippets](https://ma
 |  `cad` | const destructuring assignment (ES2015) | `const ${0:dest} = ${1}` |
 
 ### Conditional
-| Prefix | Desc              | Body                                                                                                                                                 |
-| -----: | ----------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
-|   `if` | if statement      | `if (${1}) ${0}`                                                                                                                                     |
-|   `el` | else statement    | `else ${0}`                                                                                                                                          |
-| `ifel` | if/else statement | `if (${1}) ${2} else ${0}`                                                                                                                           |
-| `elif` | else if statement | `else if (${1}) ${0}`                                                                                                                                |
-|  `ter` | ternary operator  | `${1} ? ${2} : ${0}`                                                                                                                                 |
-|   `sw` | switch case       | <code>switch (${1}) {<br>&nbsp;&nbsp;case ${2} :<br>&nbsp;&nbsp;&nbsp;&nbsp;$0<br>&nbsp;&nbsp;default:<br>&nbsp;&nbsp;&nbsp;&nbsp;break;<br>}</code> |
-| `case` | switch's case     | <code>case ${1} :<br>&nbsp;&nbsp;${0}</code>                                                                                                         |
+| Prefix | Desc              | Body                                                                                           |
+| -----: | ----------------- | ---------------------------------------------------------------------------------------------- |
+|   `if` | if statement      | `if (${1}) ${0}`                                                                               |
+|   `el` | else statement    | `else ${0}`                                                                                    |
+| `ifel` | if/else statement | `if (${1}) ${2} else ${0}`                                                                     |
+| `elif` | else if statement | `else if (${1}) ${0}`                                                                          |
+|  `ter` | ternary operator  | `${1} ? ${2} : ${0}`                                                                           |
+|   `sw` | switch case       | <code>switch (${1}) {<br>&nbsp;&nbsp;case ${2} : ${3}<br>&nbsp;&nbsp;default: ${0}<br>}</code> |
+| `case` | switch's case     | <code>case ${1} : ${0}</code>                                                                  |
 
 ### Statement
 | Prefix | Desc                       | Body                                                                                                                                          |
@@ -90,7 +90,7 @@ Install from VSCode Extension Marketplace [Hyper JavaScript Snippets](https://ma
 | -----: | -------------------------- | ------------------------------------------------------------------------------- |
 |   `cs` | class (ES2015)             | <code>class ${1:name} {<br>&nbsp;&nbsp;${0}<br>}</code>                         |
 |  `cse` | class extends (ES2015)     | <code>class ${1:name} extends ${2:base} {<br>&nbsp;&nbsp;${0}<br>}</code>       |
-| `ctor` | class constructor (ES2015) | `constructor(${1}) {${0}}`                                                      |
+|  `cst` | class constructor (ES2015) | `constructor(${1}) {${0}}`                                                      |
 |  `csm` | method (ES2015)            | `${1:name}(${2}) {${0}}`                                                        |
 | `csma` | async method (ES2015)      | `async ${1:name}(${2}) {${0}}`                                                  |
 | `gter` | getter (ES2015)            | `get ${1:property}() {${0}}`                                                    |
@@ -125,14 +125,14 @@ Install from VSCode Extension Marketplace [Hyper JavaScript Snippets](https://ma
 | `impas` | import module as (ES2015) | `import ${2:*} as ${3:name} from '${1}';${0}` |
 
 ### Node.js
-|    Prefix | Desc                   | Body                                     |
-| --------: | ---------------------- | ---------------------------------------- |
-|      `cb` | Node.js style callback | `(err, ${1:response}) => {${0}}`         |
-| `require` | require                | `require(${1:path})${0}`                 |
-|     `req` | require assignment     | `const ${2:name} = require('${1}');${0}` |
-|      `em` | exports.member         | `exports.${1} = ${2};${0}`               |
-|      `me` | module.exports         | `module.exports = ${1}${0}`              |
-|      `on` | event handler          | `on('${1:event}', ${2:callback});${0}`   |
+| Prefix | Desc                   | Body                                     |
+| -----: | ---------------------- | ---------------------------------------- |
+|   `cb` | Node.js style callback | `(err, ${1:response}) => {${0}}`         |
+|   `re` | require                | `require(${1:path})${0}`                 |
+|  `req` | require assignment     | `const ${2:name} = require('${1}');${0}` |
+|   `em` | exports.member         | `exports.${1} = ${2};${0}`               |
+|   `me` | module.exports         | `module.exports = ${1}${0}`              |
+|   `on` | event handler          | `on('${1:event}', ${2:callback});${0}`   |
 
 ### Console
 | Prefix | Desc          | Body                                                                   |
