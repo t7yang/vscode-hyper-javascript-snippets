@@ -2,6 +2,22 @@
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
+## [3.0.0] - 2021-03-22
+
+### Added
+
+- Added `Promise.{allSettled,any}`.
+
+### Changed
+
+- Remove newline for `switch` and `case`.
+- Rename `case` to `cas`, avoid meaningful.
+- Rename `ctor` to `cst`, avoid conflict to built-in.
+- Rename `require` to `re` avoid meaningful.
+- Remove `()` for every function snippets to enhance capatibility.
+  - This can make declare generator function, type generic type, return type easier.
+  - With side effect, merge anonymous function and named function snippets.
+
 ## [2.5.0] - 2020-11-30
 
 ### Changed
