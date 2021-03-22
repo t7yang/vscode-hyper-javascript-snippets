@@ -9,26 +9,37 @@ Hyper JavaScript Snippets is a snippets collection for JavaScript and TypeScript
 
 Install from VSCode Extension Marketplace [Hyper JavaScript Snippets](https://marketplace.visualstudio.com/items?itemName=t7yang.hyper-javascript-snippets).
 
-## What's the difference
-1. Cursor to the end - more easy to go next and let developer decide ending semicolon.
-2. No semicolon - for point-free friendly, except some snippets than surely end up with a semicolon. (👎 Standard JS Style)
-3. No newline - except few "big structure" snippets (like for loop).
-4. No placeholder - except something break without a placeholder (like import module).
+## Philosophy
+1. Easy Learn - related snippets share a same namespace or pattern, like every `for` loop prefix start with `fo`, all assignment snippet share `*a` pattern.
+2. Composable - No semicolon (point-free friendly), no newline, no placeholder, small snippet, the very end tabstop as possible, make composing snippets friendly.
+3. Avoid conflict and meaningful - Name prefix with no meaningful word to avoid conflict with variable name and built-in snippets prefix (as possible).
 
 ## Suggestions
 - Use [Prettier](https://prettier.io/) to help you formating your code.
+- Disable built-in snippets with [Control Snippets](https://marketplace.visualstudio.com/items?itemName=svipas.control-snippets) or hiding with built-in command [`Insert Snippet`](https://marketplace.visualstudio.com/items?itemName=svipas.control-snippets).
 - Set `"editor.snippetSuggestions": "top"`.
 - Set `"editor.formatOnSave": true,`.
 - Set `"editor.suggest.snippetsPreventQuickSuggestions": false,`.
 
 ## Known issues
-- Moving cursor when typing in active snippet break tab stop ([intented](https://github.com/Microsoft/vscode/issues/32790#issuecomment-323655481)), but sometime okey 😩.
+- Moving cursor on snippet content break tab stop ([intented](https://github.com/Microsoft/vscode/issues/32790#issuecomment-323655481)), but okey on user input content 😩.
   - Can not use "choice" to provide selection, affect: destrucring assignment...
 - There is no intenllisense / autocomplete hint when typing in active snippet (VSCode default).
   - Affect: No more autocomplete hint including any snippet, object methods, or global function .
   - Turn off `editor.suggest.snippetsPreventQuickSuggestions` help a bit.
 - Can not correctly generate paired bracket when there is a character right beside cursor.
   - A space added before `:`, affect: `sw`, `case`, `pd`, etc.
+
+## FAQ
+
+> How to remember so many snippets prefix for new user? <br />
+
+Related snippets share a same namespace, like every `for` loop prefix start with `fo`, all assignment snippet share `*a` pattern.
+
+> Why no parentheses in function snippets? <br />
+> Why no snippets for generator function? <br />
+
+No parentheses can make function snippet more flexible for generator function, generic types, return type without having to many tabstop.
 
 ### Declarations
 | Prefix | Desc                                    | Body                     |
