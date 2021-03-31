@@ -2,6 +2,12 @@
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
+## [3.1.0] - 2021-03-31
+
+### Changed
+
+- Add back parentheses to function snippets.
+
 ## [3.0.0] - 2021-03-22
 
 ### Added
