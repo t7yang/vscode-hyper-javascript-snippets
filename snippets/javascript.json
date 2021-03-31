@@ -109,22 +109,22 @@
 
   "function": {
     "prefix": "f",
-    "body": "function $1 {$0}",
+    "body": "function $1($2) {$0}",
     "description": "function"
   },
   "async function": {
     "prefix": "fa",
-    "body": "async function $1 {$0}",
+    "body": "async function $1($2) {$0}",
     "description": "async function"
   },
   "arrow function (ES2015)": {
     "prefix": "af",
-    "body": "$1 => $0",
+    "body": "($1) => $0",
     "description": "arrow function (ES2015)"
   },
   "async arrow function (ES2015)": {
     "prefix": "afa",
-    "body": "async $1 => $0",
+    "body": "async ($1) => $0",
     "description": "async arrow function (ES2015)"
   },
   "immediately-invoked function expression (IIFE)": {
