@@ -2,6 +2,18 @@
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
+## [3.2.0] - 2021-03-31
+
+### Added
+
+- Provide new `ar`, `ara`, `ag`, `aga` arrow function snippets.
+  - `ar` and `ara` with a return type tab stop.
+  - `ag` and `aga` with generic type and return type tab stop.
+
+### Changed
+
+- Shorter pran to prn (Promise.any).
+
 ## [3.1.0] - 2021-03-31
 
 ### Changed
