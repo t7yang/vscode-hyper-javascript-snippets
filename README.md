@@ -36,11 +36,6 @@ Install from VSCode Extension Marketplace [Hyper JavaScript Snippets](https://ma
 
 Related snippets share a same namespace, like every `for` loop prefix start with `fo`, all assignment snippet share `*a` pattern.
 
-> Why no parentheses in function snippets? <br />
-> Why no snippets for generator function? <br />
-
-No parentheses can make function snippet more flexible for generator function, generic types, return type without having to many tabstop.
-
 ### Declarations
 | Prefix | Desc                                    | Body                   |
 | -----: | --------------------------------------- | ---------------------- |
