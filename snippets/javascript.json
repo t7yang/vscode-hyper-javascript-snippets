@@ -109,13 +109,23 @@
 
   "function": {
     "prefix": "f",
-    "body": "function $1($2) {$0}",
+    "body": "function ($1) {$0}",
     "description": "function"
+  },
+  "named/generator function": {
+    "prefix": "fn",
+    "body": "function $1($2) {$0}",
+    "description": "named/generator function"
   },
   "async function": {
     "prefix": "fa",
-    "body": "async function $1($2) {$0}",
+    "body": "async function ($1) {$0}",
     "description": "async function"
+  },
+  "async named/generator function": {
+    "prefix": "fna",
+    "body": "async function $1($2) {$0}",
+    "description": "async named/generator function"
   },
   "arrow function (ES2015)": {
     "prefix": "af",

@@ -109,23 +109,53 @@
 
   "function": {
     "prefix": "f",
-    "body": "function $1($2)$3 {$0}",
+    "body": "function ($1)$2 {$0}",
     "description": "function"
+  },
+  "named/generator function": {
+    "prefix": "fn",
+    "body": "function $1($2)$3 {$0}",
+    "description": "named/generator function"
   },
   "async function": {
     "prefix": "fa",
-    "body": "async function $1($2)$3 {$0}",
+    "body": "async function ($1)$2 {$0}",
     "description": "async function"
+  },
+  "async named/generator function": {
+    "prefix": "fna",
+    "body": "async function $1($2)$3 {$0}",
+    "description": "async named/generator function"
   },
   "arrow function (ES2015)": {
     "prefix": "af",
-    "body": "$1($2)$3 => $0",
+    "body": "($1) => $0",
     "description": "arrow function (ES2015)"
   },
   "async arrow function (ES2015)": {
     "prefix": "afa",
-    "body": "async $1($2)$3 => $0",
+    "body": "async ($1) => $0",
     "description": "async arrow function (ES2015)"
+  },
+  "arrow function with return type (ES2015)": {
+    "prefix": "ar",
+    "body": "($1)$2 => $0",
+    "description": "arrow function with return type (ES2015)"
+  },
+  "async arrow function with return type (ES2015)": {
+    "prefix": "ara",
+    "body": "async ($1)$2 => $0",
+    "description": "async arrow function with return type (ES2015)"
+  },
+  "generic/generator arrow function (ES2015)": {
+    "prefix": "ag",
+    "body": "$1($2)$3 => $0",
+    "description": "generic/generator arrow function (ES2015)"
+  },
+  "async generic/generator arrow function (ES2015)": {
+    "prefix": "aga",
+    "body": "async $1($2)$3 => $0",
+    "description": "async generic/generator arrow function (ES2015)"
   },
   "immediately-invoked function expression (IIFE)": {
     "prefix": "iife",
