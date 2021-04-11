@@ -130,7 +130,7 @@ No parentheses can make function snippet more flexible for generator function, g
 |  `prj` | Promise reject (ES2015)      | `Promise.reject($1)$0`     |
 |  `pra` | Promise all (ES2015)         | `Promise.all($1)$0`        |
 | `pras` | Promise all settled (ES2020) | `Promise.allSettled($1)$0` |
-| `pran` | Promise any (ES2021)         | `Promise.any($1)$0`        |
+|  `prn` | Promise any (ES2021)         | `Promise.any($1)$0`        |
 |  `prt` | Promise type (TypeScript)    | `Promise<$0>`              |
 
 ### ES2015 Modules

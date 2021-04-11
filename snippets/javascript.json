@@ -233,7 +233,7 @@
     "description": "Promise all settled (ES2020)"
   },
   "Promise any (ES2021)": {
-    "prefix": "pran",
+    "prefix": "prn",
     "body": "Promise.any($1)$0",
     "description": "Promise any (ES2021)"
   },
