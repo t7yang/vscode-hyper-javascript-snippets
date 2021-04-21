@@ -57,7 +57,7 @@
   },
   "switch case": {
     "prefix": "sw",
-    "body": "switch ($1) {\n\tcase $2 : $0\n\tdefault: $0\n}",
+    "body": "switch ($1) {\n\tcase $2 : $3\n\tdefault: $0\n}",
     "description": "switch case"
   },
   "case": {
