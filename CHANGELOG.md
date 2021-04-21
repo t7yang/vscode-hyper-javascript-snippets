@@ -2,6 +2,12 @@
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
+## [3.2.1] - 2021-04-21
+
+### Fixed
+
+- Restore `$3` tab stop in `sw`.
+
 ## [3.2.0] - 2021-03-31
 
 ### Added
