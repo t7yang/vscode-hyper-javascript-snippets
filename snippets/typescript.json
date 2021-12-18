@@ -223,7 +223,7 @@
 
   "typeof": {
     "prefix": "tof",
-    "body": "typeof ${1:source} === $0",
+    "body": "typeof ${1:source} ${2:=}== $0",
     "description": "Hyper: typeof"
   },
   "instanceof": {
