@@ -218,9 +218,25 @@ export const javascript = createXSnippets({
     name: 'export all from (ES2015)',
     body: "export *$2 from '$1';$0",
   },
+  im: {
+    name: 'import (ES2015)',
+    body: 'import$0',
+  },
+  imm: {
+    name: 'import.meta (ES2015)',
+    body: 'import.meta$0',
+  },
+  imu: {
+    name: 'import.meta.url (ES2015)',
+    body: 'import.meta.url$0',
+  },
   imp: {
     name: 'import module (ES2015)',
     body: "import ${2:name} from '$1';$0",
+  },
+  imd: {
+    name: 'import module dynamically (ES2020)',
+    body: 'import($1)$0',
   },
   imf: {
     name: 'import file (ES2015)',
