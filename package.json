@@ -32,19 +32,19 @@
     "snippets": [
       {
         "language": "javascript",
-        "path": "./snippets/javascript.json"
+        "path": "./dist/javascript.json"
       },
       {
         "language": "javascriptreact",
-        "path": "./snippets/javascript.json"
+        "path": "./dist/javascript.json"
       },
       {
         "language": "typescript",
-        "path": "./snippets/typescript.json"
+        "path": "./dist/typescript.json"
       },
       {
         "language": "typescriptreact",
-        "path": "./snippets/typescript.json"
+        "path": "./dist/typescript.json"
       }
     ]
   },
