@@ -222,7 +222,7 @@ export const javascript = createXSnippets({
     name: 'import module (ES2015)',
     body: "import ${2:name} from '$1';$0",
   },
-  impf: {
+  imf: {
     name: 'import file (ES2015)',
     body: "import '$1';$0",
   },
