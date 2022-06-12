@@ -232,7 +232,7 @@ export const javascript = createXSnippets({
   },
   imp: {
     name: 'import module (ES2015)',
-    body: "import ${2:name} from '$1';$0",
+    body: "import ${2:name} from '$1'$3;$0",
   },
   imd: {
     name: 'import module dynamically (ES2020)',
@@ -244,7 +244,7 @@ export const javascript = createXSnippets({
   },
   impas: {
     name: 'import module as (ES2015)',
-    body: "import ${2:*} as ${3:name} from '$1';$0",
+    body: "import ${2:*} as ${3:name} from '$1'$3;$0",
   },
 
   cb: {

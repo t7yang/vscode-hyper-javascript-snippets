@@ -129,20 +129,20 @@ Related snippets share a same namespace, like every `for` loop prefix start with
 |  `prt` | Promise type (TypeScript)    | `Promise<$0>`              |
 
 ### ES2015 Modules
-|  Prefix | Desc                               | Body                                      |
-| ------: | ---------------------------------- | ----------------------------------------- |
-|   `exp` | export (ES2015)                    | `export $0`                               |
-|  `expd` | export default (ES2015)            | `export default $0`                       |
-| `expas` | export as (ES2015)                 | `export { $1 as $2 };$0`                  |
-|  `expf` | export from (ES2015)               | `export ${2:name} from '$1';$0`           |
-| `expaf` | export all from (ES2015)           | `export *$2 from '$1';$0`                 |
-|    `im` | import (ES2015)                    | `import$0`                                |
-|   `imm` | import.meta (ES2015)               | `import.meta$0`                           |
-|   `imu` | import.meta.url (ES2015)           | `import.meta.url$0`                       |
-|   `imp` | import module (ES2015)             | `import ${2:name} from '$1';$0`           |
-|   `imd` | import module dynamically (ES2020) | `import($1)$0`                            |
-|   `imf` | import file (ES2015)               | `import '$1';$0`                          |
-| `impas` | import module as (ES2015)          | `import ${2:*} as ${3:name} from '$1';$0` |
+|  Prefix | Desc                               | Body                                        |
+| ------: | ---------------------------------- | ------------------------------------------- |
+|   `exp` | export (ES2015)                    | `export $0`                                 |
+|  `expd` | export default (ES2015)            | `export default $0`                         |
+| `expas` | export as (ES2015)                 | `export { $1 as $2 };$0`                    |
+|  `expf` | export from (ES2015)               | `export ${2:name} from '$1';$0`             |
+| `expaf` | export all from (ES2015)           | `export *$2 from '$1';$0`                   |
+|    `im` | import (ES2015)                    | `import$0`                                  |
+|   `imm` | import.meta (ES2015)               | `import.meta$0`                             |
+|   `imu` | import.meta.url (ES2015)           | `import.meta.url$0`                         |
+|   `imp` | import module (ES2015)             | `import ${2:name} from '$1'$3;$0`           |
+|   `imd` | import module dynamically (ES2020) | `import($1)$0`                              |
+|   `imf` | import file (ES2015)               | `import '$1';$0`                            |
+| `impas` | import module as (ES2015)          | `import ${2:*} as ${3:name} from '$1'$3;$0` |
 
 ### Node.js
 | Prefix | Desc                   | Body                                 |
