@@ -2,6 +2,20 @@
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
+## [3.3.0] - 2022-06-12
+
+### Added
+
+- `im`: import
+- `imm`: import.meta
+- `imu`: import.meta.url
+- `imd`: import module dynamically
+
+### Changed
+
+- rename `impf` to `imf` (import file)
+- new tab stop for `imp` (import module) and `imas` (import module as) for import assert
+
 ## [3.2.2] - 2021-12-19
 
 ### Changed
