@@ -9,10 +9,10 @@ Hyper JavaScript Snippets is a snippets collection for JavaScript and TypeScript
 
 Install from VSCode Extension Marketplace [Hyper JavaScript Snippets](https://marketplace.visualstudio.com/items?itemName=t7yang.hyper-javascript-snippets).
 
-## Philosophy
-1. Easy Learn - related snippets share a same namespace or pattern, like every `for` loop prefix start with `fo`, all assignment snippet share `*a` pattern.
+## Advantages
+1. Easy Learn - related snippets shared a same namespace or pattern, like every `for` loop prefix start with `fo`, all assignment snippet share `*a` pattern.
 2. Composable - No semicolon (point-free friendly), no newline, no placeholder, small snippet, the very end tabstop as possible, make composing snippets friendly.
-3. Avoid conflict and meaningful - Name prefix with no meaningful word to avoid conflict with variable name and built-in snippets prefix (as possible).
+3. Avoid conflict - Try to avoid snippet's prefix conflict with variable name and built-in snippet's prefix.
 
 ## Suggestions
 - Use [Prettier](https://prettier.io/) to help you formating your code.
@@ -34,7 +34,7 @@ Install from VSCode Extension Marketplace [Hyper JavaScript Snippets](https://ma
 
 > How to remember so many snippets prefix for new user? <br />
 
-Related snippets share a same namespace, like every `for` loop prefix start with `fo`, all assignment snippet share `*a` pattern.
+Related snippets shared a same namespace, like for every `for` loop snippets prefix are start with `fo`, all assignment snippets shared `*a` pattern.
 
 ### Declarations
 | Prefix | Desc                                    | Body                   |
