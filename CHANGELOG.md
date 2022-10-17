@@ -2,6 +2,13 @@
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
+## [3.4.0] - 2022-10-17
+
+### Added
+
+- added many `console` APIs
+- introduced `cl` namespace for `console`, but `cl` itself remain for `console.log`
+
 ## [3.3.0] - 2022-06-12
 
 ### Added
