@@ -4,6 +4,7 @@
   "version": "3.3.0",
   "type": "module",
   "scripts": {
+    "update": "yarn upgrade-interactive",
     "build": "tsx src/index.ts",
     "package": "vsce package"
   },
