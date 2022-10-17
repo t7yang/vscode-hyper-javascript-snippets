@@ -276,21 +276,69 @@ export const javascript = createXSnippets({
     name: 'console.log',
     body: 'console.log($1)$0',
   },
-  ce: {
-    name: 'console.error',
-    body: 'console.error($1)$0',
+  cla: {
+    name: 'console.assert',
+    body: 'console.assert($1)$0',
   },
-  cw: {
-    name: 'console.warn',
-    body: 'console.warn($1)$0',
+  clcl: {
+    name: 'console.clear',
+    body: 'console.clear($1)$0',
   },
-  cd: {
+  clc: {
+    name: 'console.count',
+    body: 'console.count($1)$0',
+  },
+  clcr: {
+    name: 'console.countReset',
+    body: 'console.countReset($1)$0',
+  },
+  cld: {
+    name: 'console.debug',
+    body: 'console.debug($1)$0',
+  },
+  cldi: {
     name: 'console.dir',
     body: 'console.dir($1)$0',
   },
-  ct: {
+  cldx: {
+    name: 'console.dirxml',
+    body: 'console.dirxml($1)$0',
+  },
+  cle: {
+    name: 'console.error',
+    body: 'console.error($1)$0',
+  },
+  clg: {
+    name: 'console.group',
+    body: ['console.group($1);', '$0', 'console.groupEnd($1);'],
+  },
+  clgc: {
+    name: 'console.groupCollapsed',
+    body: ['console.groupCollapsed($1);', '$0', 'console.groupEnd($1);'],
+  },
+  cli: {
+    name: 'console.info',
+    body: 'console.info($1)$0',
+  },
+  cltb: {
+    name: 'console.table',
+    body: 'console.table($1)$0',
+  },
+  clt: {
     name: 'console.time',
-    body: "console.time('$1')\n$0\nconsole.timeEnd('$1')",
+    body: ['console.time($1);', '$0', 'console.timeEnd($1);'],
+  },
+  cltl: {
+    name: 'console.timeLog',
+    body: 'console.timeLog($1)$0',
+  },
+  cltr: {
+    name: 'console.trace',
+    body: 'console.trace($1)$0',
+  },
+  clw: {
+    name: 'console.warn',
+    body: 'console.warn($1)$0',
   },
 
   sett: {

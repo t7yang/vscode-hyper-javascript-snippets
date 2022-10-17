@@ -155,13 +155,25 @@ Related snippets shared a same namespace, like for every `for` loop snippets pre
 |   `on` | event handler          | `on('${1:event}', ${2:callback});$0` |
 
 ### Console
-| Prefix | Desc          | Body                                                             |
-| -----: | ------------- | ---------------------------------------------------------------- |
-|   `cl` | console.log   | `console.log($1)$0`                                              |
-|   `ce` | console.error | `console.error($1)$0`                                            |
-|   `cw` | console.warn  | `console.warn($1)$0`                                             |
-|   `cd` | console.dir   | `console.dir($1)$0`                                              |
-|   `ct` | console.time  | <code>console.time('$1') <br>$0<br> console.timeEnd('$1')</code> |
+| Prefix | Desc                   | Body                                                                  |
+| -----: | ---------------------- | --------------------------------------------------------------------- |
+|   `cl` | console.log            | `console.log($1)$0`                                                   |
+|  `cla` | console.assert         | `console.assert($1)$0`                                                |
+| `clcl` | console.clear          | `console.clear($1)$0`                                                 |
+|  `clc` | console.count          | `console.count($1)$0`                                                 |
+| `clcr` | console.countReset     | `console.countReset($1)$0`                                            |
+|  `cld` | console.debug          | `console.debug($1)$0`                                                 |
+| `cldi` | console.dir            | `console.dir($1)$0`                                                   |
+| `cldx` | console.dirxml         | `console.dirxml($1)$0`                                                |
+|  `cle` | console.error          | `console.error($1)$0`                                                 |
+|  `clg` | console.group          | <code>console.group($1)<br>$0<br>console.groupEnd($1)</code>          |
+| `clgc` | console.groupCollapsed | <code>console.groupCollapsed($1)<br>$0<br>console.groupEnd($1)</code> |
+|  `cli` | console.info           | `console.info($1)$0`                                                  |
+| `cltb` | console.table          | `console.table($1)$0`                                                 |
+|  `clt` | console.time           | <code>console.time('$1') <br>$0<br> console.timeEnd('$1')</code>      |
+| `cltl` | console.timeLog        | `console.timeLog($1)$0`                                               |
+| `cltr` | console.trace          | `console.trace($1)$0`                                                 |
+|  `clw` | console.warn           | `console.warn($1)$0`                                                  |
 
 ### Timers
 |  Prefix | Desc                       | Body                                       |
