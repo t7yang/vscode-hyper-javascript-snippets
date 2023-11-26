@@ -2,6 +2,25 @@
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
+## [3.5.0] - 2023-11-26
+
+Highlight:
+- marked `exp` namespace as deprecated and replace with `ex` due to conflict with node.js `exp`.
+- removed `case` in `sw` because TypeScript is able to provide intellisense for the case statement.
+
+### Added
+
+- added `ex` namespace to replace `exp`
+
+### Deprecated
+
+- marked all snippets with `exp` namespace as deprecated
+
+### Changed
+
+- removed `case` template in `sw` (switch statement)
+- removed `hasOwnProperty` check in `foi`
+
 ## [3.4.0] - 2022-10-17
 
 ### Added
