@@ -61,7 +61,7 @@ export const javascript = createXSnippets({
   },
   foi: {
     name: 'for in loop',
-    body: 'for (const $1 in $2) {\n\tif ($2.hasOwnProperty($1)) {\n\t\t$0\n\t}\n}',
+    body: 'for (const $1 in $2) $0',
   },
   fof: {
     name: 'for of loop (ES2015)',

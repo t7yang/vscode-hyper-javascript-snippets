@@ -58,16 +58,16 @@ Related snippets shared a same namespace, like for every `for` loop snippets pre
 | `case` | switch's case     | `case $1 : $0`       |
 
 ### Statement
-| Prefix | Desc                       | Body                                                                                                                                |
-| -----: | -------------------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
-|   `fo` | for loop                   | `for ($1 ; $2 ; $3) $0`                                                                                                             |
-|  `foi` | for in loop                | <code>for (const $1 in $2) {<br>&nbsp;&nbsp;if ($2.hasOwnProperty($1)) {<br>&nbsp;&nbsp;&nbsp;&nbsp;$0<br>&nbsp;&nbsp;}<br>}</code> |
-|  `fof` | for of loop (ES2015)       | `for (const $1 of $2) $0`                                                                                                           |
-|  `foa` | for await of loop (ES2018) | `for await (const $1 of $2) $0`                                                                                                     |
-|   `wh` | while loop                 | `while ($1) $0`                                                                                                                     |
-|   `tc` | try/catch                  | `try {$1} catch $2 {$0}`                                                                                                            |
-|   `tf` | try/finally                | `try {$1} finally {$0}`                                                                                                             |
-|  `tcf` | try/catch/finally          | `try {$1} catch $2 {$3} finally {$0}`                                                                                               |
+| Prefix | Desc                       | Body                                  |
+| -----: | -------------------------- | ------------------------------------- |
+|   `fo` | for loop                   | `for ($1 ; $2 ; $3) $0`               |
+|  `foi` | for in loop                | `for (const $1 in $2) $0`             |
+|  `fof` | for of loop (ES2015)       | `for (const $1 of $2) $0`             |
+|  `foa` | for await of loop (ES2018) | `for await (const $1 of $2) $0`       |
+|   `wh` | while loop                 | `while ($1) $0`                       |
+|   `tc` | try/catch                  | `try {$1} catch $2 {$0}`              |
+|   `tf` | try/finally                | `try {$1} finally {$0}`               |
+|  `tcf` | try/catch/finally          | `try {$1} catch $2 {$3} finally {$0}` |
 
 ### Functions
 | Prefix | Desc                                                        | Body                           |
