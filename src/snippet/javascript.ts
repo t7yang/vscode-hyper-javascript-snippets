@@ -199,22 +199,42 @@ export const javascript = createXSnippets({
   },
 
   exp: {
-    name: 'export (ES2015)',
+    name: 'deprecated: export (ES2015)',
     body: 'export $0',
   },
   expd: {
-    name: 'export default (ES2015)',
+    name: 'deprecated: export default (ES2015)',
     body: 'export default $0',
   },
   expas: {
-    name: 'export as (ES2015)',
+    name: 'deprecated: export as (ES2015)',
     body: 'export $1 as $2;$0',
   },
   expf: {
-    name: 'export from (ES2015)',
+    name: 'deprecated: export from (ES2015)',
     body: "export ${2:name} from '$1';$0",
   },
   expaf: {
+    name: 'deprecated: export all from (ES2015)',
+    body: "export *$2 from '$1';$0",
+  },
+  ex: {
+    name: 'export (ES2015)',
+    body: 'export $0',
+  },
+  exd: {
+    name: 'export default (ES2015)',
+    body: 'export default $0',
+  },
+  exas: {
+    name: 'export as (ES2015)',
+    body: 'export $1 as $2;$0',
+  },
+  exf: {
+    name: 'export from (ES2015)',
+    body: "export ${2:name} from '$1';$0",
+  },
+  exaf: {
     name: 'export all from (ES2015)',
     body: "export *$2 from '$1';$0",
   },

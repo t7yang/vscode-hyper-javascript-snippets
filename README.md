@@ -131,11 +131,16 @@ Related snippets shared a same namespace, like for every `for` loop snippets pre
 ### ES2015 Modules
 |  Prefix | Desc                               | Body                                        |
 | ------: | ---------------------------------- | ------------------------------------------- |
-|   `exp` | export (ES2015)                    | `export $0`                                 |
-|  `expd` | export default (ES2015)            | `export default $0`                         |
-| `expas` | export as (ES2015)                 | `export { $1 as $2 };$0`                    |
-|  `expf` | export from (ES2015)               | `export ${2:name} from '$1';$0`             |
-| `expaf` | export all from (ES2015)           | `export *$2 from '$1';$0`                   |
+|   `exp` | export (ES2015)                    | `deprecated: export $0`                     |
+|  `expd` | export default (ES2015)            | `deprecated: export default $0`             |
+| `expas` | export as (ES2015)                 | `deprecated: export { $1 as $2 };$0`        |
+|  `expf` | export from (ES2015)               | `deprecated: export ${2:name} from '$1';$0` |
+| `expaf` | export all from (ES2015)           | `deprecated: export *$2 from '$1';$0`       |
+|    `ex` | export (ES2015)                    | `export $0`                                 |
+|   `exd` | export default (ES2015)            | `export default $0`                         |
+|  `exas` | export as (ES2015)                 | `export { $1 as $2 };$0`                    |
+|   `exf` | export from (ES2015)               | `export ${2:name} from '$1';$0`             |
+|  `exaf` | export all from (ES2015)           | `export *$2 from '$1';$0`                   |
 |    `im` | import (ES2015)                    | `import$0`                                  |
 |   `imm` | import.meta (ES2015)               | `import.meta$0`                             |
 |   `imu` | import.meta.url (ES2015)           | `import.meta.url$0`                         |
