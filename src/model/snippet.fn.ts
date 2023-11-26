@@ -33,8 +33,12 @@ export const createXSnippets = <T extends XSnippetDict>(input: T): T => input;
 export const mapToVscSnippetDicMeta = (metas: XSnippetDictMeta[], label: string): VscSnippetDictMeta[] =>
   metas.map(meta => {
     const entries = Object.entries(meta.dict);
-    if (entries.length !== new Set(entries.map(([, { name }]) => name)).size)
+    const names = new Set<string>();
+    const dup = entries.filter(([, { name }]) => names.has(name) || !names.add(name));
+    if (dup.length) {
+      console.log(`Found duplicated name in ${meta.filename}: `, dup);
       throw Error(`Found duplicated name in ${meta.filename}`);
+    }
 
     return {
       ...meta,
