@@ -48,7 +48,7 @@ export const javascript = createXSnippets({
   },
   sw: {
     name: 'switch case',
-    body: 'switch ($1) {\n\tcase $2 : $3\n\tdefault: $0\n}',
+    body: 'switch ($1) {$2}$0',
   },
   cas: {
     name: 'case',

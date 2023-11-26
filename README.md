@@ -47,15 +47,15 @@ Related snippets shared a same namespace, like for every `for` loop snippets pre
 |  `cad` | const destructuring assignment (ES2015) | `const ${0:dest} = $1` |
 
 ### Conditional
-| Prefix | Desc              | Body                                                                                   |
-| -----: | ----------------- | -------------------------------------------------------------------------------------- |
-|   `if` | if statement      | `if ($1) $0`                                                                           |
-|   `el` | else statement    | `else $0`                                                                              |
-| `ifel` | if/else statement | `if ($1) $2 else $0`                                                                   |
-| `elif` | else if statement | `else if ($1) $0`                                                                      |
-|  `ter` | ternary operator  | `$1 ? $2 : $0`                                                                         |
-|   `sw` | switch case       | <code>switch ($1) {<br>&nbsp;&nbsp;case $2 : $3<br>&nbsp;&nbsp;default: $0<br>}</code> |
-| `case` | switch's case     | <code>case $1 : $0</code>                                                              |
+| Prefix | Desc              | Body                 |
+| -----: | ----------------- | -------------------- |
+|   `if` | if statement      | `if ($1) $0`         |
+|   `el` | else statement    | `else $0`            |
+| `ifel` | if/else statement | `if ($1) $2 else $0` |
+| `elif` | else if statement | `else if ($1) $0`    |
+|  `ter` | ternary operator  | `$1 ? $2 : $0`       |
+|   `sw` | switch case       | `switch ($1) {$2}$0` |
+| `case` | switch's case     | `case $1 : $0`       |
 
 ### Statement
 | Prefix | Desc                       | Body                                                                                                                                |
